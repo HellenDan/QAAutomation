@@ -1,0 +1,887 @@
+<html><head><meta charset="utf-8"><title>რეგისტრაცია | Elit Electronics</title><base href="/"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#1976d2"><meta property="url" content="https://ee.ge"><meta property="type" content="Online shoping"><meta name="title" content="რეგისტრაცია"><meta name="keywords" content=""><meta name="description" content=""><meta property="og:url" content="https://ee.ge/registration"><meta property="image" content="https://assets.ee.ge/web-assets/images/mainlogo.png"><meta property="og:type" content="website"><meta property="og:title" content=""><meta property="og:image" content=""><meta property="og:image:width" content=""><meta property="og:image:height" content=""><meta property="og:description" content=""><meta property="product:brand" content=""><meta property="product:availability" content=""><meta property="product:condition" content=""><meta property="product:price:amount" content=""><meta property="product:price:currency" content=""><meta property="product:retailer_item_id" content=""><meta property="product:item_group_id" content=""><link rel="icon" type="image/x-icon" href="https://assets.ee.ge/web-assets/images/favicon.ico"><script src="https://connect.facebook.net/en_US/sdk.js?hash=31de90b9ea8cfaae61fd163d8eb1321c" async="" crossorigin="anonymous"></script><script src="https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.en.geaHZXF2-fw.O/m=auth2/rt=j/sv=1/d=1/ed=1/rs=AHpOoo9yYF5eCIYPx4UH9gpJptM2Q_GGxQ/cb=gapi.loaded_0?le=scs" async=""></script><script id="google-login" src="https://apis.google.com/js/api.js" gapi_processed="true"></script><script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script id="bog-jssdk" src="https://webstatic.bog.ge/bog-sdk/bog-sdk.js" async=""></script><script>function loadMap(elementId, latLngList,isCurrentLangEng) {
+    setTimeout(function(){
+      if(!document.getElementById(elementId)) return;
+        var lastOpenedInfoWindow="";
+        var infowindow=new google.maps.InfoWindow({
+            content: '<p id="map_content"></p>'
+          });
+        var map = new google.maps.Map(
+            document.getElementById(elementId),{center: { lat: 41.721743, lng: 44.734488 },
+            zoom: 8});
+            latLngList.forEach(function(item){
+                var uluru = {lat: Number(item.lat), lng: Number(item.long)};
+                var marker = new google.maps.Marker({position: uluru, 
+                    map: map, icon: {url: '/images/bottomlogo.png',  
+                    scaledSize: new google.maps.Size(30, 30),}});
+                    marker.addListener('click', function(event) {
+                    if(lastOpenedInfoWindow){infowindow.close(map,marker);}                                 
+                    var item = latLngList.find(function(item){
+                        return item.lat==event.latLng.lat() && item.long==event.latLng.lng()
+                    });
+                    if(isCurrentLangEng){
+                        var htmlString = '<span style="color:black;font: 400 11px Roboto, Arial, sans-serif;font: 400 11px Roboto, Arial, sans-serif;font-weight: bold;font-size: 13px;">'+item.address+''
+                        var htmlString1= '<span>,'+item.city+'</span></span>'
+                        var htmlString2= htmlString+htmlString1
+                    }else {
+                        var htmlString = '<span style="color:black;font: 400 11px Roboto, Arial, sans-serif;font: 400 11px Roboto, Arial, sans-serif;font-weight: bold;font-size: 13px;">'+item.address_gr+''
+                        var htmlString1= '<span>,'+item.city+'</span></span>';
+                        var htmlString2= htmlString+htmlString1;
+                    }
+                    infowindow.open(map, marker);
+                    lastOpenedInfoWindow=infowindow;
+                    setTimeout(function(){document.getElementById('map_content').innerHTML =htmlString2;},100);
+                });
+            });
+    },5000);
+}</script><script defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcBabxVyI2h99Rk7DN-QLAw-qcULyPAq4"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-62205731-1"></script><script>
+                          window.dataLayer = window.dataLayer || [];
+                          function gtag(){dataLayer.push(arguments);}
+                          gtag('js', new Date());
+
+                          gtag('config', 'UA-62205731-1', {
+                            page_path: window.location.pathname,
+                          });
+                  </script><script>
+                        window.bogAsyncInit = function() {
+                          BOG.init('1006')
+                      };
+                      (function(d, s, id){
+                          var js, jss = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) {return;}
+                          js = d.createElement(s); js.id = id;
+                          js.src = "https://webstatic.bog.ge/bog-sdk/bog-sdk.js"
+                          js.async = true;
+                          jss.parentNode.insertBefore(js, jss);
+                      }(document, 'script', 'bog-jssdk'));
+                  </script><script>
+          setTimeout(function(){
+            var gaScript = document.createElement('script');
+            gaScript.setAttribute('async', 'true');
+            gaScript.setAttribute('defer', 'true');
+            gaScript.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=UA-62205731-1');
+
+            var gaScript2 = document.createElement('script');
+            gaScript2.innerText = 'window.dataLayer = window.dataLayer || [];'+
+            "function gtag(){dataLayer.push(arguments);}"+
+            "gtag('js', new Date());"+
+            "gtag('config', 'UA-62205731-1');"+
+            "window['GoogleAnalyticsObject'] = 'gtag';"+
+            "window['gtag'] = window['gtag'] || function() {"+
+            "(window['gtag'].q = window['gtag'].q || []).push(arguments)"+
+            "};"+
+
+            "(function(i, s, o, g, r, a, m) {"+
+              "i['GoogleAnalyticsObject'] = r;"+
+              "i[r] = i[r] || function() {"+
+              "(i[r].q = i[r].q || []).push(arguments)"+
+              "}, i[r].l = 1 * new Date();"+
+              "a = s.createElement(o),m = s.getElementsByTagName(o)[0];"+
+              "a.async = 1;"+
+              "a.src = g;"+
+              "m.parentNode.insertBefore(a, m)"+
+            "})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');"+
+            //"ga('create', 'UA-62205731-1', 'auto');"+
+
+            "(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-N6JDJNF');";
+
+            // document?.documentElement?.firstChild?.appendChild(gaScript);
+            // document?.documentElement?.firstChild?.appendChild(gaScript2);
+            if(document && document.documentElement && document.documentElement.firstChild) {
+               document.documentElement.firstChild.appendChild(gaScript);
+               document.documentElement.firstChild.appendChild(gaScript2);
+            }
+          },12000);
+          
+          </script><script>setTimeout(function(){
+                  (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s);
+                  js.setAttribute('async',true);
+                  js.setAttribute('defer',true);
+                  js.setAttribute('crossorigin','anonymous');
+                  js.id = id;
+                  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk')) }, 8000);</script><link rel="preload" href="/_next/static/css/b8f7e6e8.df8d9460.chunk.css" as="style"><link rel="stylesheet" href="/_next/static/css/b8f7e6e8.df8d9460.chunk.css" data-n-g=""><link rel="preload" href="/_next/static/css/styles.b9dfdc0b.chunk.css" as="style"><link rel="stylesheet" href="/_next/static/css/styles.b9dfdc0b.chunk.css" data-n-g=""><link rel="preload" href="/_next/static/css/pages/_app.5cc6587f.chunk.css" as="style"><link rel="stylesheet" href="/_next/static/css/pages/_app.5cc6587f.chunk.css" data-n-g=""><link rel="preload" href="/_next/static/css/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8_CSS.38476d46.chunk.css" as="style"><link rel="stylesheet" href="/_next/static/css/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8_CSS.38476d46.chunk.css" data-n-p=""><noscript data-n-css="true"></noscript><link rel="preload" href="/_next/static/chunks/main-4189f4996d312f6e6965.js" as="script"><link rel="preload" href="/_next/static/chunks/webpack-40ca2c15c1e336f98ae4.js" as="script"><link rel="preload" href="/_next/static/chunks/framework.8683c114909ee93ee89f.js" as="script"><link rel="preload" href="/_next/static/chunks/b8f7e6e8.f670b774c84bedcb2ff7.js" as="script"><link rel="preload" href="/_next/static/chunks/commons.452e0a8a3d964806ddef.js" as="script"><link rel="preload" href="/_next/static/chunks/b37f2c124f6a1649a3f696d3bb8cf2c743617ebf.5a3a72fdcc44604a4090.js" as="script"><link rel="preload" href="/_next/static/chunks/9eaa8e276db5416268d63aca7930f40b6ba8a1a8.d7d44a8d58b6d16a7523.js" as="script"><link rel="preload" href="/_next/static/chunks/styles.31ed321999e45d6c7c32.js" as="script"><link rel="preload" href="/_next/static/chunks/pages/_app-d3ccfcd40ad47467641d.js" as="script"><link rel="preload" href="/_next/static/chunks/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8.46e50e24af4b0235b109.js" as="script"><link rel="preload" href="/_next/static/chunks/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8_CSS.ff5578978733a40a67a3.js" as="script"><link rel="preload" href="/_next/static/chunks/997a8a3190a747276e8b5535ade07f4411c0afef.b061f7889b8020c62163.js" as="script"><link rel="preload" href="/_next/static/chunks/1233e4f5dc145b124a2985fd378a1ddc0216b08c.6c765a9acc044cdb00a2.js" as="script"><link rel="preload" href="/_next/static/chunks/pages/registration-52695205bd411c1006ae.js" as="script"><style id="bog-sdk-styles">@font-face {
+    font-family: 'BOG';
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot');
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Regular.svg#BOG-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BOG Headline';
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot');
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-Headline-Medium.svg#BOG-Headline-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'BOG';
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot');
+    src: url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff2') format('woff2'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.woff') format('woff'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.ttf') format('truetype'),
+    url('https://webstatic.bog.ge/fonts/BOG/BOG-SemiBold.svg#BOG-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+.bog-smart-button,
+.bog-smart-button *,
+.bog-smart-modal,
+.bog-smart-modal * {
+    line-height: normal !important;
+    box-sizing: border-box !important;
+}
+.bog-smart-button {
+    display: inline-flex;
+    align-items: stretch;
+    overflow: hidden;
+    box-sizing: border-box !important;
+    width: auto;
+    height: 32px;
+    max-height: 32px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.92);
+    background-color: #ff600a;
+    border-radius: 4px;
+    font-family: BOG Headline;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition:  opacity 200ms ease-in-out,
+            color 200ms ease-in-out,
+            background-color 200ms ease-in-out,
+            box-shadow 200ms ease-in-out;
+    user-select: none;
+    padding: 0 8px;
+}
+.bog-smart-button .bog-smart-button-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0 8px;
+    color: inherit;
+    text-decoration: none;
+}
+.bog-smart-button:hover {
+    background-color: #ff6c1d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.bog-smart-button:active, .bog-smart-button:focus, .bog-smart-button:visited {
+    background-color: #ff600a;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.bog-smart-button .bog-smart-button-dots-loader {
+    position: absolute;
+    width: 38px;
+    height: 8px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    opacity: 0.8;
+}
+.bog-smart-button.bog-smart-button-loading {
+    pointer-events: none;
+}
+.bog-smart-button.bog-smart-button-loading .bog-smart-button-container span {
+    visibility: hidden;
+}
+.bog-smart-button.bog-smart-button-loading .bog-smart-button-dots-loader {
+    display: flex;
+}
+@keyframes OpacityAnimation {
+    0%{opacity:0}
+    50%{opacity:1}
+    100%{opacity:0}
+}
+.bog-smart-button .bog-smart-button-dots-loader .bog-smart-button-dots-loader-dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 50%;
+    animation: 1s linear 0s infinite normal none running OpacityAnimation;
+} 
+@keyframes modal-reveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes modal-close {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes modal-container-reveal {
+    0% {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+@keyframes modal-container-close {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.7);
+    }
+}
+@keyframes modal-container-reveal-responsive {
+    0% {
+        transform: translate(-50%, 100%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, 0%) scale(1);
+    }
+}
+@keyframes modal-container-close-responsive {
+    0% {
+        transform: translate(-50%, 0%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, 100%) scale(1);
+    }
+}
+.bog-smart-modal {
+    display: flex;
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    letter-spacing: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.68);
+    -webkit-tap-highlight-color: transparent;
+}
+.bog-smart-modal:not(.bog-smart-modal-close) {
+    animation: modal-reveal 100ms ease-in-out forwards;
+}
+.bog-smart-modal.bog-smart-modal-close {
+    animation: modal-close 100ms ease-in-out forwards;
+}
+.bog-smart-modal .bog-smart-modal-loader {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+    height: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    opacity: 0.8;
+}
+.bog-smart-modal .bog-smart-modal-loader .bog-smart-modal-loader-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ffa400;
+    border-radius: 50%;
+    animation: OpacityAnimation 1s linear infinite;
+}
+.bog-smart-modal .bog-smart-modal-loader .bog-smart-modal-loader-dot:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.bog-smart-modal .bog-smart-modal-loader .bog-smart-modal-loader-dot:nth-child(3) {
+    animation-delay: 0.2s;
+}
+@keyframes OpacityAnimation {
+    0%{opacity:0}
+    50%{opacity:1}
+    100%{opacity:0}
+}
+.bog-smart-modal .bog-smart-modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-grow: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: #fefefe;
+    max-width: 564px;
+    width: 100%;
+    min-height: 355px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1);
+    letter-spacing: 0px;
+    padding: 32px;
+}
+.bog-smart-modal:not(.bog-smart-modal-close) .bog-smart-modal-wrapper {
+    animation: modal-container-reveal 300ms ease-in-out forwards;
+}
+.bog-smart-modal.bog-smart-modal-close .bog-smart-modal-wrapper {
+    animation: modal-container-close 300ms ease-in-out forwards;
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    box-sizing: border-box !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.bog-smart-modal .bnpl .bog-smart-modal-header {
+    justify-content: flex-end;
+    background-image: url(https://webstatic.bog.ge/bog-sdk/128d33617fc6b3f587e7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: none;
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-header .bog-smart-modal-header-title {
+    font-family: 'BOG Headline', sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.9);
+}
+.bog-smart-modal .bnpl .bog-smart-modal-header .bog-smart-modal-header-title {
+    display: none;
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-header .bog-smart-modal-header-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
+    user-select: none;
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-header .bog-smart-modal-header-close:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-header .bog-smart-modal-header-close > img {
+    width: 16px;
+    height: 16px;
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex: 1;
+    align-items: center;
+    box-sizing: border-box !important;
+}
+.bog-smart-modal .bog-smart-modal-wrapper.bnpl .bog-smart-modal-content {
+    display: none;
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-content > * {
+    width: 100%;
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-content > *:not(:last-child) {
+    margin: 0 0 32px 0;
+}
+.bog-smart-modal-slider-title,
+.bog-smart-modal-bnpl-title,
+.bog-smart-modal-bnpl-title-mobile {
+    font-family: BOG;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+    padding-top: 36px;
+}
+.bnpl .bog-smart-modal-slider-title,
+.bog-smart-modal-bnpl-title,
+.bog-smart-modal-bnpl-title-mobile{
+    display: none;
+}
+.bnpl .bog-smart-modal-bnpl-title {
+    display: block;
+}
+.bog-smart-modal-wrapper-description {
+    display: flex;
+    flex-direction: column;
+}
+.bog-smart-modal-description, .bog-smart-modal-description-bnpl{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-gap: 16px 7px;
+    align-items: flex-end;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+.bog-smart-modal-description {
+    display: none;
+}
+.bog-smart-modal-slider-percent-is-standart ~ .bog-smart-modal-wrapper-description .bog-smart-modal-description-bnpl {
+    display: none;
+}
+.bog-smart-modal-slider-percent-is-standart ~ .bog-smart-modal-wrapper-description .bog-smart-modal-description {
+    display: grid;
+}
+.bog-smart-modal-description-icon {
+    background-image: url('https://webstatic.bog.ge/icons/bd/check.svg');
+    filter: invert(39%) sepia(91%) saturate(826%) hue-rotate(109deg) brightness(97%) contrast(95%);
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bog-smart-modal-description-text{
+    font-size: 12px;
+    color: #06A74C;
+}
+.bog-smart-modal-footer-top {
+    display: none;
+}
+.bnpl .bog-smart-modal-footer-top {
+    display: grid;
+    grid-gap: 32px;
+    padding-bottom: 24px;
+}
+.bog-smart-modal-footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    box-sizing: border-box !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+.bog-smart-modal-footer-amount-text {
+    font-family: 'BOG';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    padding-right: 8px;
+}
+.bog-smart-modal-footer-amount-value{
+    font-family: 'BOG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+.bog-smart-modal-footer-amount {
+    display: flex;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.bog-smart-modal-more-month-button{
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.bog-smart-modal-more-month-button-icon{
+    background-image: url('https://webstatic.bog.ge/icons/bd/chevron_right.svg');
+    filter: invert(51%) sepia(34%) saturate(4312%) hue-rotate(348deg) brightness(104%) contrast(101%);
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bog-smart-modal-more-month-button-text {
+    padding-left: 12px;
+    color: #FF6C1D;
+    font-size: 13px;
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-footer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box !important;
+    flex-direction: column;
+}
+.bog-smart-modal .bnpl .bog-smart-modal-footer {
+    padding: 32px 0 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+.bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-footer .bog-smart-modal-footer-logo {
+    height: 36px;
+    width: auto;
+}
+.bog-smart-modal-slider-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 8px;
+}
+.bog-smart-modal-slider-basket-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px !important;
+    padding: 10px 15px;
+}
+.bog-smart-modal-slider-basket-text-icon {
+    background: rgba(0, 0, 0, 0.3);
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+    -webkit-mask-image: url(https://webstatic.bog.ge/icons/bd/info.svg);
+    mask-image: url(https://webstatic.bog.ge/icons/bd/info.svg);
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    width: 16px;
+    height: 16px;
+}
+.bog-smart-modal-slider-basket-text {
+    max-width: 380px;
+    font-family: BOG;
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.3);
+}
+.bog-smart-modal-slider {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 18px;
+    background: #f0f0f0;
+    border-color: #fefefe;
+    border-width: 6px 0;
+    border-style: solid;
+    margin-bottom: 6px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.bog-smart-modal-slider .bog-smart-modal-slider-handle {
+    position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: #7938EA;
+    border-radius: 50%;
+    transform: translateY(calc(-34%));
+    left: -7px;
+    cursor: pointer;
+    transition: left 100ms linear;
+    box-sizing: border-box !important;
+}
+.bog-smart-modal-slider-steps {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 16px;
+}
+
+.bog-smart-modal-slider-steps > span {
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    top: 0;
+    padding: 8px;
+    margin-top: -8px;
+    transform: translateX(-36%);
+    font-family: BOG;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.32);
+    font-weight: 600;
+    transition: color 150ms ease-in-out;
+    cursor: pointer;
+    user-select: none;
+}
+.bog-smart-modal-slider-steps > span.active {
+    color: #191919;
+}
+.bog-smart-modal-slider-progress {
+    background: #7938EA;
+    border-radius: 5px;
+    height: 100%;
+    width: 0;
+    transition: width 100ms linear;
+}
+.bog-smart-modal-slider-counter-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4px; */
+}
+.bog-smart-modal-slider-counter-container > .bog-smart-modal-slider-counter-list-wrapper:nth-child(1) {
+    justify-content: flex-start;
+}
+.bog-smart-modal-slider-counter-container > .bog-smart-modal-slider-counter-list-wrapper:nth-child(2) {
+    justify-content: center;
+}
+.bog-smart-modal-slider-counter-list-wrapper {
+    display: flex;
+    overflow: hidden;
+    overflow: hidden;
+    height: 37px;
+    min-width: 30px;
+    margin-bottom: -6px;
+    margin-right: 4px;
+}
+.bog-smart-modal-slider-counter-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 30px;
+    transform: translateY(0);
+    transition: transform 100ms ease-in-out;
+    height: max-content;
+}
+.bog-smart-modal-slider-counter-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+
+}
+.bog-smart-modal-slider-counter-list > span {
+    font-family: BOG;
+    font-size: 36px;
+    font-weight: 700;
+    height: 46px;
+    width: max-content;
+    color: #000000;
+    user-select: none;
+}
+.bog-smart-modal-slider-counter-label {
+    font-family: BOG;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.9);
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 9px;
+}
+.bog-smart-modal-slider-percent-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 36px;
+    min-width: 120px;
+    font-family: BOG;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.9);
+}
+.bog-smart-modal-slider-percent-wrapper > * {
+    position: absolute;
+    transition: opacity 450ms ease-in-out, left 450ms ease-in-out;
+}
+.bog-smart-modal-slider-counter-label-title {
+    transition: opacity 450ms ease-in-out;
+    color: #ff600a;
+    font-family: BOG;
+    font-size: 10px;
+    font-weight: 600;
+}
+.bog-smart-modal-slider-bnpl-logo {
+    background-image: url(https://webstatic.bog.ge/bog-sdk/d8e7444b27513095739f.png);
+    width: 114px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: center 3px;
+    background-size: cover;
+}
+.bog-smart-modal-slider-percent-label {
+    font-size: 24px;
+    font-weight: 600;
+    left: 8px;
+    bottom: 0;
+    color: #FF600A;
+    opacity: 0;
+}
+.bog-smart-modal-bnpl-list-wrapper{
+    display: none;
+    padding: 36px 0 0;
+}
+.bnpl .bog-smart-modal-bnpl-list-wrapper {
+    display: block;
+}
+.bog-smart-modal-bnpl-list {
+    display: flex;
+    justify-content: space-between;
+}
+.bog-smart-modal-bnpl-amount-text {
+    font-family: 'BOG';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+.bog-smart-modal-bnpl-amount {
+    position: relative;
+    display: grid;
+    grid-gap: 8px;
+    max-width: fit-content;
+}
+.bog-smart-modal-bnpl-amount-border {
+    width: 1px;
+    height: 40px;
+    background-color:#D4BFF8;
+}
+.bog-smart-modal-bnpl-amount-value {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: 'BOG';
+    font-style: normal;
+}
+.bog-smart-modal-slider-percent-is-standart .bog-smart-modal-slider-bnpl-logo {
+    opacity: 0;
+}
+.bog-smart-modal-slider-percent-is-standart .bog-smart-modal-slider-percent-label {
+    opacity: 1;
+}
+.bog-smart-modal-slider-steps .step-bnpl {
+    color: #d4bff8;
+}
+
+.bog-smart-modal-slider-steps .step-bnpl.active {
+    color: #7938EA;
+}
+.bog-smart-modal-slider-percent-is-standart .bog-smart-modal-slider-handle,
+.bog-smart-modal-slider-percent-is-standart .bog-smart-modal-slider-progress{
+    background: #ff5b00;
+}
+.bog-smart-modal-slider-percent-is-standart ~ .bog-smart-modal-wrapper-description .bog-smart-modal-description-icon {
+    background-image: url('https://webstatic.bog.ge/icons/bd/info.svg');
+    filter: invert(51%) sepia(34%) saturate(4312%) hue-rotate(348deg) brightness(104%) contrast(101%);
+}
+.bog-smart-modal-slider-percent-is-standart ~ .bog-smart-modal-wrapper-description .bog-smart-modal-description-text {
+    color: #FF6C1D;
+}
+.bog-smart-modal-installment-window-open .bog-smart-modal-wrapper {
+    display: none;
+}
+.bog-smart-modal-popup-close {
+    display: none;
+}
+.bog-smart-modal-installment-window-open .bog-smart-modal-popup-close {
+    display: flex;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    filter: invert(1);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 425px) {
+    .bog-smart-modal .bog-smart-modal-wrapper .bog-smart-modal-slider-wrapper {
+        box-sizing: border-box;
+    }
+    .bog-smart-modal .bog-smart-modal-wrapper {
+        bottom: 0;
+        top: auto;
+        border-radius: 20px 20px 0 0;
+    }
+    .bog-smart-modal:not(.bog-smart-modal-close) .bog-smart-modal-wrapper {
+        max-height: 100vh;
+        overflow-y: auto;
+        animation: modal-container-reveal-responsive 300ms ease-in-out forwards;
+    }
+    .bog-smart-modal.bog-smart-modal-close .bog-smart-modal-wrapper {
+        animation: modal-container-close-responsive 300ms ease-in-out forwards !important;
+    }
+    .bog-smart-modal-bnpl-amount-text {
+        font-size: 10px;
+    }
+    .bog-smart-modal-bnpl-amount-value {
+        font-size: 18px;
+    }
+    .bog-smart-modal-wrapper-description {
+        flex-direction: column-reverse;
+    }
+    .bog-smart-modal-bnpl-list-wrapper {
+        padding: 0 0 36px 0;
+    }
+    .bog-smart-modal-slider-counter-list > span{
+        font-size: 18px;
+    }
+    .bog-smart-modal-slider-counter-container {
+        align-items: flex-end;
+    }
+    .bog-smart-modal-slider-percent-label {
+        font-size: 18px;
+        bottom: 8px;
+    }
+    .bnpl .bog-smart-modal-bnpl-title-mobile {
+        display: block;
+    }
+    .bnpl .bog-smart-modal-bnpl-title {
+        display: none;
+    }
+    .bog-smart-modal-footer-amount-text {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .bog-smart-modal-bnpl-amount {
+        max-width: min-content;
+    }
+    .bog-smart-modal-bnpl-amount-value {
+        font-size: 14px;
+        min-width: 50px;
+    }
+    .bog-smart-modal-footer-amount-text {
+        font-size: 12px;
+        max-width: 60%;
+    }
+    .bog-smart-modal-footer-amount-value {
+        font-size: 13px;
+    }
+    .bog-smart-modal-footer-logo {
+        height: 24px;
+    }
+    .bog-smart-button .bog-smart-button-container {
+        font-size: 12px;
+        padding: 0;
+    }
+    .bog-smart-modal-slider-percent-wrapper {
+        min-width: 60px;
+    }
+    .bog-smart-modal-slider-bnpl-logo {
+        background-position: -2px 10px;
+        background-size: 70px;
+    }
+    .bog-smart-modal-slider-percent-label{
+        font-size: 12px;
+        left: 0;
+    }
+    .bog-smart-modal-slider-counter-label {
+        margin-left: 3px;
+    }
+}</style><style data-emotion-css="q2061w">.css-q2061w{box-sizing:border-box;max-height:100%;max-width:100%;overflow:hidden;padding:8px;pointer-events:none;position:fixed;z-index:1000;top:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}</style><style data-emotion-css="q2061w">.css-q2061w{box-sizing:border-box;max-height:100%;max-width:100%;overflow:hidden;padding:8px;pointer-events:none;position:fixed;z-index:1000;top:0;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);}</style><link as="script" rel="prefetch" href="/_next/static/chunks/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8.46e50e24af4b0235b109.js"><link as="fetch" rel="prefetch" href="/_next/static/css/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8_CSS.38476d46.chunk.css"><link as="script" rel="prefetch" href="/_next/static/chunks/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8_CSS.ff5578978733a40a67a3.js"><link as="script" rel="prefetch" href="/_next/static/chunks/997a8a3190a747276e8b5535ade07f4411c0afef.b061f7889b8020c62163.js"><link as="script" rel="prefetch" href="/_next/static/chunks/9940367e6a0e9c1528793b9be0cfee1bc94db7cc.e46604c2a63637c5b9a7.js"><link as="script" rel="prefetch" href="/_next/static/chunks/5bf29e1cb380d97ee0a90812391fdd2e12e37081.ddbd20e05be15dc8811c.js"><link as="fetch" rel="prefetch" href="/_next/static/css/pages/%5Bcategory%5D.788cb728.chunk.css"><link as="script" rel="prefetch" href="/_next/static/chunks/pages/%5Bcategory%5D-bb44844d4db8b1751ea1.js"><link as="fetch" rel="prefetch" href="/_next/static/css/fd918875aa89f47bafbfcf0b1d670b7efe08ca6d_CSS.f27417ad.chunk.css"><link as="script" rel="prefetch" href="/_next/static/chunks/fd918875aa89f47bafbfcf0b1d670b7efe08ca6d_CSS.33fae6201fee986d0584.js"><link as="script" rel="prefetch" href="/_next/static/chunks/5c2b8ad1a10474760239ea8640b242f78476ec3a.66720eaf01f0a1ef2597.js"><link as="fetch" rel="prefetch" href="/_next/static/css/5c2b8ad1a10474760239ea8640b242f78476ec3a_CSS.bac76f0c.chunk.css"><link as="script" rel="prefetch" href="/_next/static/chunks/5c2b8ad1a10474760239ea8640b242f78476ec3a_CSS.748f7f460fe4ac62566f.js"><link as="fetch" rel="prefetch" href="/_next/static/css/99a32e2af3551f72afbf58802df9ae2b149877b9_CSS.4e8dcf02.chunk.css"><link as="script" rel="prefetch" href="/_next/static/chunks/99a32e2af3551f72afbf58802df9ae2b149877b9_CSS.955cd01b185e91c5e5fc.js"><link as="script" rel="prefetch" href="/_next/static/chunks/pages/%5Bcategory%5D/%5BproductList%5D-e26d690f1a9fec8948a3.js"><link as="script" rel="prefetch" href="/_next/static/chunks/pages/sale-product-list-98cceb5bb4be34349580.js"><link as="script" rel="prefetch" href="/_next/static/chunks/pages/brands-8b2f680c33b2da68f046.js"><link as="script" rel="prefetch" href="/_next/static/chunks/pages/saved-product-list-99559f32a8302477c5e0.js"><link as="script" rel="prefetch" href="/_next/static/chunks/pages/page/%5BpageName%5D-70d7acf51b39a03e33b1.js"><link rel="canonical" href="https://ee.ge/registration"><style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:'lucida grande', tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://connect.facebook.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://connect.facebook.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://connect.facebook.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://connect.facebook.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://connect.facebook.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/51/2/common.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/51/2/util.js"></script></head><body><noscript id="GTMiframe"><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6JDJNF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N6JDJNF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --></div><div id="__next"><div><div><header class="p-3 d-xs-none header-wrapper"><div class="inner-content"><div class="logo"><a href="/"><img height="50" src="/images/mainlogo.png" alt="no image"></a></div><div class="search"><div class="input-group"><input type="text" id="search_list" class="form-control" placeholder="ძიება..." value=""><div class="input-group-append"><button class="btn btn-secondary search-btn" type="button"><i class="fa fa-search"></i></button></div></div></div><div class="geo"><p class="mb-0"><a class="languageAnchor active"><span>geo</span></a> <!-- -->|<a class="languageAnchor "><span> eng</span></a></p></div><div class="buttons"><button class="btn-register mb-2 mr-4">რეგისტრაცია</button><button class="btn-register mb-2 mr-4">ავტორიზაცია</button><button class="btn-cart"><i class="cart"><span class="cart-count">0</span><img src="/images/cart.png" alt=""></i></button></div></div></header></div><div class="header-menu-wrapper"><nav class="d-xs-none"><div class="inner-content"><div class="toggle-Icon "><button id="toggle"><i class="fa fa-bars"></i></button></div><ul class="unexpanded"><div class="geo d-lg-none d-md-none d-sm-none white_back p-2"><span class="txt-red">: </span><span class="mb-0"><a class="languageAnchor "><span>geo</span></a> <!-- -->|<a class="languageAnchor "><span> eng</span></a></span></div><li class="nav-item  list-item-group"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/kompiuteruli-teqnika"><span>კომპიუტერული ტექნიკა</span></a><div class="dropdown-content"><div class="container-fluid"><div class="row"><div class="col-3 mt-3 mb-3"><div><div class="second-category">კომპიუტერი/ნოუთბუქი</div><a href="/kompiuteruli-teqnika/Personaluri%20Kompiuteri">პერსონალური კომპიუტერი</a><a href="/kompiuteruli-teqnika/monitori">მონიტორი</a><a href="/kompiuteruli-teqnika/paneluri-kompiuteri">პანელური კომპიუტერი</a><a href="/kompiuteruli-teqnika/leptopi">ნოუთბუქი</a><a href="/kompiuteruli-teqnika/plansheti">პლანშეტი</a><div class="second-category">კომპიუტერული ტექნიკის აქსესუარები</div><a href="/kompiuteruli-teqnika/leptopis%20chanta">ჩანთა</a><a href="/kompiuteruli-teqnika/sawmendi%20sitxe">საწმენდი სითხე</a><a href="/kompiuteruli-teqnika/kompiuteris%20joistiki">კომპიუტერის ჯოისტიკი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/kompiuteruli-teqnika/Leptopis-Kuleri">ლეპტოპის ქულერი</a><a href="/kompiuteruli-teqnika/External%20Hard%20Drives">გარე მყარი დისკი</a><a href="/kompiuteruli-teqnika/kompiuteris-klaviatura">კომპიუტერის კლავიატურა</a><a href="/kompiuteruli-teqnika/kompiuteris-klaviatura-mausi">კლავიატურა &amp; მაუსი</a><a href="/kompiuteruli-teqnika/Laptop%20Charger">ნოუთბუქის დამტენი</a><a href="/kompiuteruli-teqnika/mikrofoni">მიკროფონი</a><a href="/kompiuteruli-teqnika/Mouse">მაუსი</a><a href="/kompiuteruli-teqnika/mausis-dafa">მაუსის დაფა</a><a href="/kompiuteruli-teqnika/kompiuteris%20yursasmenebi">კომპიუტერის ყუსასმენები</a><a href="/kompiuteruli-teqnika/proeqtori">პროექტორი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/kompiuteruli-teqnika/kompiuteris%20spikeri">კომპიუტერის სპიკერი</a><a href="/kompiuteruli-teqnika/Planshetis%20keisi">პლანშეტის ქეისი</a><a href="/kompiuteruli-teqnika/flesh%20mexsierebis%20barati">ფლეშ მეხსიერების ბარათი</a><a href="/kompiuteruli-teqnika/webcam">ვებკამერა </a><div class="second-category">საოფისე ტექნიკა</div><a href="/kompiuteruli-teqnika/GamingChair">გეიმინგ სავარძელი</a><a href="/kompiuteruli-teqnika/Gaming-Desk">გეიმინგ მაგიდა</a><a href="/kompiuteruli-teqnika/Lamp">სანათი </a><a href="/kompiuteruli-teqnika/printeris%20kartriji">პრინტერის კარტრიჯი</a><a href="/kompiuteruli-teqnika/routeri">როუტერი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/kompiuteruli-teqnika/usafrtxoebbis%20kamera">უსაფრთხოების კამერა</a><a href="/kompiuteruli-teqnika/chkviani-saxlis-aksesuarebi">ჭკვიანი სახლის აქსესუარები</a><a href="/kompiuteruli-teqnika/denis%20gamanawilebeli">დენის გამანაწილებელი</a><a href="/kompiuteruli-teqnika/wi-fi-mimgebi">Wi-Fi მიმღები</a><a href="/kompiuteruli-teqnika/printeri">პრინტერი</a></div></div></div></div></div></li><li class="nav-item  list-item-group"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/msxvili-sayofacxovrebo-teqnika"><span>მსხვილი საყოფაცხოვრებო ტექნიკა</span></a><div class="dropdown-content"><div class="container-fluid"><div class="row"><div class="col-3 mt-3 mb-3"><div><div class="second-category">საყოფაცხოვრებო ტექნიკა</div><a href="/msxvili-sayofacxovrebo-teqnika/sashrobi">საშრობი</a><a href="/msxvili-sayofacxovrebo-teqnika/gazquris-zedapiri">გაზქურის ზედაპირი</a><a href="/msxvili-sayofacxovrebo-teqnika/gamtsovi">გამწოვი</a><a href="/msxvili-sayofacxovrebo-teqnika/gazqura">გაზქურა</a><a href="/msxvili-sayofacxovrebo-teqnika/Ortklis%20Sashrobi">ორთქლის საშრობი</a><a href="/msxvili-sayofacxovrebo-teqnika/sarecxis-manqnana-sashrobit">სარეცხის მანქანა საშრობით</a><a href="/msxvili-sayofacxovrebo-teqnika/wylis-dispenseri">წყლის დისპენსერი</a><a href="/msxvili-sayofacxovrebo-teqnika/chasashenebeli-elqtro-gumeli">ჩასაშენებელი ელექტრო ღუმელი</a><a href="/msxvili-sayofacxovrebo-teqnika/macivari">მაცივარი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/msxvili-sayofacxovrebo-teqnika/sarecxi-maqnana">სარეცხი მანქანა</a><a href="/msxvili-sayofacxovrebo-teqnika/churchlis-sarecxi-manqana">ჭურჭლის სარეცხი მანქანა</a><div class="second-category">გათბობა და გაგრილება</div><a href="/msxvili-sayofacxovrebo-teqnika/kondicioneri">კონდიციონერი</a><a href="/msxvili-sayofacxovrebo-teqnika/centraluri-gatbobis-qvabi">ცენტრალური გათბობის ქვაბი</a><a href="/msxvili-sayofacxovrebo-teqnika/eleqtro-gamatbobeli">ელექტრო გამათბობელი</a><a href="/msxvili-sayofacxovrebo-teqnika/vintilatori">ვენტილატორი</a><a href="/msxvili-sayofacxovrebo-teqnika/gazis-gamatbobeli">გაზის გამათბობელი</a><a href="/msxvili-sayofacxovrebo-teqnika/gamatbobeli-mowyobilobebi">გაზის წყლის გამაცხელებელი</a><a href="/msxvili-sayofacxovrebo-teqnika/zetis-radiatori">ზეთის რადიატორი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/msxvili-sayofacxovrebo-teqnika/radiatori">რადიატორი</a><a href="/msxvili-sayofacxovrebo-teqnika/wylis-avzi">წყლის ავზი</a></div></div></div></div></div></li><li class="nav-item  list-item-group"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/mobiluri-telefonebi-da-aqsesuarebi"><span>მობილური ტელეფონი და აქსესუარები</span></a><div class="dropdown-content"><div class="container-fluid"><div class="row"><div class="col-3 mt-3 mb-3"><div><div class="second-category">აქსესუარები</div><a href="/mobiluri-telefonebi-da-aqsesuarebi/Audio-Sistemebi">აუდიო სისტემა</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/elementi">ელემენტი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/kabeli">კაბელი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/manqanis%20aqsesuarebi">მანქანის აქსესუარები</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/earphone%20cover%20case">ყურსასმენის ქეისი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/Gift-Box">სასაჩუქრე ბოქსი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/trekeri">ტრეკერი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/mexsierebis%20barati">მეხსიერების ბარათი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/mobiluris%20qeisi">მობილურის ქეისი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/mobiluri-telefonebi-da-aqsesuarebi/portatuli-damteni">პორტატული დამტენი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/Manatobeli%20Rgoli">მანათობელი რგოლი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/ekranis%20damcavi">ეკრანის დამცავი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/selfis-Jokhi">სელფის ჯოხი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/chkviani-saat">ჭკვიანი საათი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/%E1%83%AD%E1%83%99%E1%83%95%E1%83%98%E1%83%90%E1%83%9C%E1%83%98%20%E1%83%A1%E1%83%90%E1%83%90%E1%83%97%E1%83%98%E1%83%A1%20%E1%83%90%E1%83%A5%E1%83%A1%E1%83%94%E1%83%A1%E1%83%A3%E1%83%90%E1%83%A0%E1%83%94%E1%83%91%E1%83%98">ჭკვიანი საათის აქსესუარები</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/Stabilizatori">სტაბილიზატორი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/Sterilizer">სტერილიზატორი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/%E1%83%A1%E1%83%A2%E1%83%98%E1%83%9A%E1%83%A3%E1%83%A1%E1%83%98">სტილუსი</a><a href="/mobiluri-telefonebi-da-aqsesuarebi/damteni">დამტენი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/mobiluri-telefonebi-da-aqsesuarebi/yursasmenebi">ყურსასმენები</a><div class="second-category">მობილური ტექნიკა</div><a href="/mobiluri-telefonebi-da-aqsesuarebi/mobiluri-telefoni">მობილური ტელეფონები</a></div></div></div></div></div></li><li class="nav-item  list-item-group"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/wvrili-sayofacxovrebo-teqnika"><span>წვრილი საყოფაცხოვრებო ტექნიკა</span></a><div class="dropdown-content"><div class="container-fluid"><div class="row"><div class="col-3 mt-3 mb-3"><div><div class="second-category">საოჯახო ტექნიკა</div><a href="/wvrili-sayofacxovrebo-teqnika/haeris-damatenianebeli">ჰაერის დამატენიანებელი</a><a href="/wvrili-sayofacxovrebo-teqnika/uto">უთო</a><a href="/wvrili-sayofacxovrebo-teqnika/sautovebeli-magida">საუთოვებელი მაგიდა</a><a href="/wvrili-sayofacxovrebo-teqnika/Popkornis-Aparati">პოპკორნის აპარატი</a><a href="/wvrili-sayofacxovrebo-teqnika/mtversasruti">მტვერსასრუტი</a><a href="/wvrili-sayofacxovrebo-teqnika/vacuum-cleaner-bags">მტვერსასრუტის ფილტრები</a><div class="second-category">სამზარეულოს ტექნიკა</div><a href="/wvrili-sayofacxovrebo-teqnika/aerogrili">აერო გრილი</a><a href="/wvrili-sayofacxovrebo-teqnika/sacxobi%20formebi">საცხობი ფორმები</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/wvrili-sayofacxovrebo-teqnika/blenderi">ბლენდერი</a><a href="/wvrili-sayofacxovrebo-teqnika/puris%20sacxobi">პურის საცხობი</a><a href="/wvrili-sayofacxovrebo-teqnika/choperi">ჩოპერი</a><a href="/wvrili-sayofacxovrebo-teqnika/Coffee%20Capsules">ყავის კაფსულები</a><a href="/wvrili-sayofacxovrebo-teqnika/yavis-saprqvavi">ყავის საფქვავი</a><a href="/wvrili-sayofacxovrebo-teqnika/yavis-aparati">ყავის აპარატი</a><a href="/wvrili-sayofacxovrebo-teqnika/fris-aparati">ფრის აპარატი</a><a href="/wvrili-sayofacxovrebo-teqnika/chiris-aparati">დეჰიდრატორი/ჩირის აპარატი</a><a href="/wvrili-sayofacxovrebo-teqnika/Samzareulos%20Kombaini">სამზარეულოს კომბაინი</a><a href="/wvrili-sayofacxovrebo-teqnika/grili">გრილი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/wvrili-sayofacxovrebo-teqnika/hand-blender">ხელის ბლენდერი</a><a href="/wvrili-sayofacxovrebo-teqnika/Kinulis-Aparati">ყინულის აპარატი</a><a href="/wvrili-sayofacxovrebo-teqnika/damaqucmacebeli">დამაქუცმაცებელი</a><a href="/wvrili-sayofacxovrebo-teqnika/sulu-spiede">წვენსაწური</a><a href="/wvrili-sayofacxovrebo-teqnika/chaidani">ჩაიდანი</a><a href="/wvrili-sayofacxovrebo-teqnika/samzareulos-aqsesuarebi">სამზარეულოს აქსესუარები</a><a href="/wvrili-sayofacxovrebo-teqnika/xorcis-manqana">ხორცის მანქანა</a><a href="/wvrili-sayofacxovrebo-teqnika/mikrotalguri">მიკროტალღური</a><a href="/wvrili-sayofacxovrebo-teqnika/MILK%20FROTH">რძის ამომყვანი</a><a href="/wvrili-sayofacxovrebo-teqnika/Mini-Gumeli">მინი ღუმელი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/wvrili-sayofacxovrebo-teqnika/miqseri">მიქსერი</a><a href="/wvrili-sayofacxovrebo-teqnika/multicooker">მულტი სახარში</a><a href="/wvrili-sayofacxovrebo-teqnika/multiroboti">მულტირობოტი</a><a href="/wvrili-sayofacxovrebo-teqnika/sendvichis-aparati">სენდვიჩის აპარატი</a><a href="/wvrili-sayofacxovrebo-teqnika/saswori">სასწორი</a><a href="/wvrili-sayofacxovrebo-teqnika/slaiseri">სლაისერი</a><a href="/wvrili-sayofacxovrebo-teqnika/ortqlsaxarshi">ორთქლსახარში</a><a href="/wvrili-sayofacxovrebo-teqnika/tea-maker">ჩაის აპარატი</a><a href="/wvrili-sayofacxovrebo-teqnika/tosteri">ტოსტერი</a><a href="/wvrili-sayofacxovrebo-teqnika/vakuumis-aparati">ვაკუუმის აპარატი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/wvrili-sayofacxovrebo-teqnika/vaflis-aparati">ვაფლის აპარატი</a><a href="/wvrili-sayofacxovrebo-teqnika/wylis%20piltri">წყლის ფილტრი</a><a href="/wvrili-sayofacxovrebo-teqnika/ghvinis%20gasakhsneli">ღვინის გასახსნელი</a><div class="second-category">თავის მოვლის საშუალებები</div><a href="/wvrili-sayofacxovrebo-teqnika/tansacmlis-sawmendi">ტანსაცმლის საწმენდი</a><a href="/wvrili-sayofacxovrebo-teqnika/Kbilis-Jagrisi">ელექტრო კბილის ჯაგრისი</a><a href="/wvrili-sayofacxovrebo-teqnika/epilatori">ეპილატორი</a><a href="/wvrili-sayofacxovrebo-teqnika/tmis-dasaxvevi">თმის დასახვევი</a><a href="/wvrili-sayofacxovrebo-teqnika/tmis-feni">თმის ფენი</a><a href="/wvrili-sayofacxovrebo-teqnika/tmis-gasasworebeli">თმის გასასწორებელი</a></div></div></div></div></div></li><li class="nav-item  list-item-group"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/televizorebi-da-saxlis-kinoteatri"><span>ტელევიზორი და გასართობი საშუალებები</span></a><div class="dropdown-content"><div class="container-fluid"><div class="row"><div class="col-3 mt-3 mb-3"><div><div class="second-category">კონსოლები</div><a href="/televizorebi-da-saxlis-kinoteatri/Nintendo">ნინტენდო</a><a href="/televizorebi-da-saxlis-kinoteatri/%E1%83%9E%E1%83%A14">ფლეისთეიშენ 4</a><a href="/televizorebi-da-saxlis-kinoteatri/PS4%20Accessories">PS4 აქსესუარები</a><a href="/televizorebi-da-saxlis-kinoteatri/ps4%20game">PS4 თამაშები</a><a href="/televizorebi-da-saxlis-kinoteatri/PS5%20Accessories">PS5 აქსესუარები</a><a href="/televizorebi-da-saxlis-kinoteatri/PS5%20Games">PS5 თამაშები</a><a href="/televizorebi-da-saxlis-kinoteatri/plaisteisheni">ფლეისთეიშენ 5</a><a href="/televizorebi-da-saxlis-kinoteatri/xboxi">იქსბოქსი</a><div class="second-category">გასართობი საშუალებები</div></div></div><div class="col-3 mt-3 mb-3"><div><a href="/televizorebi-da-saxlis-kinoteatri/Binoculars">ბინოკლი</a><a href="/televizorebi-da-saxlis-kinoteatri/Fotoaparatis-aksesuarebi">ფოტოაპარატის აქსესუარები</a><a href="/televizorebi-da-saxlis-kinoteatri/kamera">ფოტოაპარატი</a><a href="/televizorebi-da-saxlis-kinoteatri/droni">დრონი</a><a href="/televizorebi-da-saxlis-kinoteatri/saganmamatleblo-roboti">საგანმანათლებლო რობოტი</a><a href="/televizorebi-da-saxlis-kinoteatri/eleqtro%20skuteri">ელექტრო სკუტერი</a><a href="/televizorebi-da-saxlis-kinoteatri/hoverbordi">ჰოვერბორდი</a><a href="/televizorebi-da-saxlis-kinoteatri/teleskopi">ტელესკოპი</a><div class="second-category">ტელევიზორი/სახლის კინოთეატრი</div><a href="/televizorebi-da-saxlis-kinoteatri/%E1%83%99%E1%83%90%E1%83%91%E1%83%94%E1%83%9A%E1%83%98">კაბელი</a></div></div><div class="col-3 mt-3 mb-3"><div><a href="/televizorebi-da-saxlis-kinoteatri/saxlis-kinoteatri">სახლის კინოთეატრი</a><a href="/televizorebi-da-saxlis-kinoteatri/tv%20box">TV ბოქსი</a><a href="/televizorebi-da-saxlis-kinoteatri/Televizoris-Charcho">ტელევიზორის ჩარჩო</a><a href="/televizorebi-da-saxlis-kinoteatri/televizoris%20sakidi">ტელევიზორის საკიდი</a><a href="/televizorebi-da-saxlis-kinoteatri/televizori">ტელევიზორი</a></div></div></div></div></div></li><li class="nav-item  list-item-group"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="/furniture"><span>ავეჯი</span></a><div class="dropdown-content"><div class="container-fluid"><div class="row"><div class="col-3 mt-3 mb-3"><div><div class="second-category">მისაღები ოთახი</div><a href="/furniture/%E1%83%99%E1%83%9D%E1%83%9C%E1%83%A1%E1%83%9D%E1%83%9A%E1%83%98">კონსოლი</a><a href="/furniture/%E1%83%93%E1%83%98%E1%83%95%E1%83%90%E1%83%9C%E1%83%98">დივანი</a><a href="/furniture/%E1%83%A1%E1%83%90%E1%83%95%E1%83%90%E1%83%A0%E1%83%AB%E1%83%94%E1%83%9A%E1%83%98">სავარძელი</a><div class="second-category">სასადილო ოთახი</div><a href="/furniture/%E1%83%93%E1%83%94%E1%83%A1%E1%83%90%E1%83%A3">დესაუ</a><a href="/furniture/%E1%83%9B%E1%83%90%E1%83%92%E1%83%98%E1%83%93%E1%83%90">მაგიდა</a><a href="/furniture/%E1%83%A1%E1%83%99%E1%83%90%E1%83%9B%E1%83%98">სკამი</a><a href="/furniture/%E1%83%AD%E1%83%A3%E1%83%A0%E1%83%AD%E1%83%9A%E1%83%98%E1%83%A1%20%E1%83%99%E1%83%90%E1%83%A0%E1%83%90%E1%83%93%E1%83%90">ჭურჭლის კარადა</a><div class="second-category">საძინებელი</div></div></div><div class="col-3 mt-3 mb-3"><div><a href="/furniture/%E1%83%99%E1%83%9D%E1%83%9B%E1%83%9D%E1%83%93%E1%83%98">კომოდი</a><a href="/furniture/%E1%83%A2%E1%83%A3%E1%83%9B%E1%83%91%E1%83%9D">ტუმბო</a><a href="/furniture/%E1%83%9E%E1%83%A3%E1%83%A4%E1%83%98">პუფი</a><a href="/furniture/%E1%83%9B%E1%83%90%E1%83%A6%E1%83%90%E1%83%9A%E1%83%98%20%E1%83%99%E1%83%9D%E1%83%9B%E1%83%9D%E1%83%93%E1%83%98">მაღალი კომოდი</a><a href="/furniture/%E1%83%A1%E1%83%90%E1%83%AC%E1%83%9D%E1%83%9A%E1%83%98">საწოლი</a><a href="/furniture/%E1%83%91%E1%83%94%E1%83%9C%E1%83%A9%E1%83%98">ბენჩი</a><a href="/furniture/%E1%83%A2%E1%83%90%E1%83%9C%E1%83%A1%E1%83%90%E1%83%AA%E1%83%9B%E1%83%9A%E1%83%98%E1%83%A1%20%E1%83%99%E1%83%90%E1%83%A0%E1%83%90%E1%83%93%E1%83%90">ტანსაცმლის კარადა</a><div class="second-category">გარე ავეჯი</div><div class="second-category">დეკორი</div><a href="/furniture/%E1%83%A8%E1%83%98%E1%83%A0%E1%83%9B%E1%83%90">შირმა</a></div></div></div></div></div></li><li class="nav-item list-item-group"><a class="nav-link" href="/sale-product-list"><span>ფასდაკლება</span></a></li><li class="nav-item list-item-group brandDesktop"><a class="nav-link" href="/brands"><span>ბრენდი</span></a></li><li class="nav-item list-item-group"><a class="nav-link" href="/saved-product-list"><span>შენახული ნივთები<i class="fa fa-heart-o" style="margin-left:5px"></i></span></a></li></ul></div></nav><div class="mobile-menu col-12 d-lg-none d-md-none d-sm-none"><div class="row"><div class="col-12 menu_header_row"><div class="row"><div class="col-7 left"><button class="navbar-toggler hidden-lg-up small" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse"><img src="https://assets.ee.ge/web-assets/images/menu-darkgray.png" alt=""></button><a href="/"><div class="header-image logo big"><img src="https://assets.ee.ge/web-assets/images/mainlogo.png" alt=""></div></a></div><div class="col-5 right"><div class="header-icon small"><img src="https://assets.ee.ge/web-assets/images/account-darkgray.png" alt=""></div><div class="header-icon small"><button class="btn-cart"><i class="cart"><span class="cart-count">0</span><img src="https://assets.ee.ge/web-assets/images/cart.png" alt=""></i></button></div></div></div></div><div class="search col-12"><div class="input-group"><input type="text" class="form-control search-input" placeholder="ძიება..." value="" id="keyword"><div class="input-group-append"><button class="btn btn-secondary search-btn" type="button"><i class="fa fa-search"></i></button></div></div></div></div><div class="menu_box"><span class="close_menu"><img src="https://assets.ee.ge/web-assets/images/close-md-white.png" alt=""></span><ul class="nav navbar-nav pull-lg-left pull-left"><li class="nav-item"><span class="geo"><span class="txt-red">ენა:<!-- --> </span><span class="mb-0"><a class="languageAnchor active"><span>geo</span></a><span class="txt-grey">|</span><a class="languageAnchor "><span> eng</span></a></span></span></li><li class="nav-item "><a class="nav-link main-menu" href="/kompiuteruli-teqnika">კომპიუტერული ტექნიკა</a><a class="nav-link pull-right icon-menu" id="dropdownMenu0" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://assets.ee.ge/web-assets/images/select-arrow1.png"></a><ul class="dropdown-menu "><li><div class="second-category">კომპიუტერი/ნოუთბუქი</div></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/Personaluri Kompiuteri">პერსონალური კომპიუტერი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/monitori">მონიტორი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/paneluri-kompiuteri">პანელური კომპიუტერი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/leptopi">ნოუთბუქი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/plansheti">პლანშეტი</a></li><li><div class="second-category">კომპიუტერული ტექნიკის აქსესუარები</div></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/leptopis chanta">ჩანთა</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/sawmendi sitxe">საწმენდი სითხე</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/kompiuteris joistiki">კომპიუტერის ჯოისტიკი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/Leptopis-Kuleri">ლეპტოპის ქულერი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/External Hard Drives">გარე მყარი დისკი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/kompiuteris-klaviatura">კომპიუტერის კლავიატურა</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/kompiuteris-klaviatura-mausi">კლავიატურა &amp; მაუსი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/Laptop Charger">ნოუთბუქის დამტენი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/mikrofoni">მიკროფონი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/Mouse">მაუსი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/mausis-dafa">მაუსის დაფა</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/kompiuteris yursasmenebi">კომპიუტერის ყუსასმენები</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/proeqtori">პროექტორი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/kompiuteris spikeri">კომპიუტერის სპიკერი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/Planshetis keisi">პლანშეტის ქეისი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/flesh mexsierebis barati">ფლეშ მეხსიერების ბარათი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/webcam">ვებკამერა </a></li><li><div class="second-category">საოფისე ტექნიკა</div></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/GamingChair">გეიმინგ სავარძელი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/Gaming-Desk">გეიმინგ მაგიდა</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/Lamp ">სანათი </a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/printeris kartriji">პრინტერის კარტრიჯი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/routeri">როუტერი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/usafrtxoebbis kamera">უსაფრთხოების კამერა</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/chkviani-saxlis-aksesuarebi">ჭკვიანი სახლის აქსესუარები</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/denis gamanawilebeli">დენის გამანაწილებელი</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/wi-fi-mimgebi">Wi-Fi მიმღები</a></li><li><a class="dropdown-item" href="/kompiuteruli-teqnika/printeri">პრინტერი</a></li></ul></li><li class="nav-item "><a class="nav-link main-menu" href="/msxvili-sayofacxovrebo-teqnika">მსხვილი საყოფაცხოვრებო ტექნიკა</a><a class="nav-link pull-right icon-menu" id="dropdownMenu1" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://assets.ee.ge/web-assets/images/select-arrow1.png"></a><ul class="dropdown-menu "><li><div class="second-category">საყოფაცხოვრებო ტექნიკა</div></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/sashrobi">საშრობი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/gazquris-zedapiri">გაზქურის ზედაპირი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/gamtsovi">გამწოვი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/gazqura">გაზქურა</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/Ortklis Sashrobi">ორთქლის საშრობი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/sarecxis-manqnana-sashrobit">სარეცხის მანქანა საშრობით</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/wylis-dispenseri">წყლის დისპენსერი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/chasashenebeli-elqtro-gumeli">ჩასაშენებელი ელექტრო ღუმელი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/macivari">მაცივარი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/sarecxi-maqnana">სარეცხი მანქანა</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/churchlis-sarecxi-manqana">ჭურჭლის სარეცხი მანქანა</a></li><li><div class="second-category">გათბობა და გაგრილება</div></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/kondicioneri">კონდიციონერი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/centraluri-gatbobis-qvabi">ცენტრალური გათბობის ქვაბი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/eleqtro-gamatbobeli">ელექტრო გამათბობელი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/vintilatori">ვენტილატორი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/gazis-gamatbobeli">გაზის გამათბობელი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/gamatbobeli-mowyobilobebi">გაზის წყლის გამაცხელებელი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/zetis-radiatori">ზეთის რადიატორი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/radiatori">რადიატორი</a></li><li><a class="dropdown-item" href="/msxvili-sayofacxovrebo-teqnika/wylis-avzi">წყლის ავზი</a></li></ul></li><li class="nav-item "><a class="nav-link main-menu" href="/mobiluri-telefonebi-da-aqsesuarebi">მობილური ტელეფონი და აქსესუარები</a><a class="nav-link pull-right icon-menu" id="dropdownMenu2" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://assets.ee.ge/web-assets/images/select-arrow1.png"></a><ul class="dropdown-menu "><li><div class="second-category">აქსესუარები</div></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/Audio-Sistemebi">აუდიო სისტემა</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/elementi">ელემენტი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/kabeli">კაბელი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/manqanis aqsesuarebi">მანქანის აქსესუარები</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/earphone cover case">ყურსასმენის ქეისი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/Gift-Box">სასაჩუქრე ბოქსი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/trekeri">ტრეკერი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/mexsierebis barati">მეხსიერების ბარათი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/mobiluris qeisi">მობილურის ქეისი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/portatuli-damteni">პორტატული დამტენი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/Manatobeli Rgoli">მანათობელი რგოლი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/ekranis damcavi">ეკრანის დამცავი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/selfis-Jokhi">სელფის ჯოხი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/chkviani-saat">ჭკვიანი საათი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/ჭკვიანი საათის აქსესუარები">ჭკვიანი საათის აქსესუარები</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/Stabilizatori">სტაბილიზატორი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/Sterilizer">სტერილიზატორი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/სტილუსი">სტილუსი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/damteni">დამტენი</a></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/yursasmenebi">ყურსასმენები</a></li><li><div class="second-category">მობილური ტექნიკა</div></li><li><a class="dropdown-item" href="/mobiluri-telefonebi-da-aqsesuarebi/mobiluri-telefoni">მობილური ტელეფონები</a></li></ul></li><li class="nav-item "><a class="nav-link main-menu" href="/wvrili-sayofacxovrebo-teqnika">წვრილი საყოფაცხოვრებო ტექნიკა</a><a class="nav-link pull-right icon-menu" id="dropdownMenu3" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://assets.ee.ge/web-assets/images/select-arrow1.png"></a><ul class="dropdown-menu "><li><div class="second-category">საოჯახო ტექნიკა</div></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/haeris-damatenianebeli">ჰაერის დამატენიანებელი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/uto">უთო</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/sautovebeli-magida">საუთოვებელი მაგიდა</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/Popkornis-Aparati">პოპკორნის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/mtversasruti">მტვერსასრუტი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/vacuum-cleaner-bags">მტვერსასრუტის ფილტრები</a></li><li><div class="second-category">სამზარეულოს ტექნიკა</div></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/aerogrili">აერო გრილი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/sacxobi formebi">საცხობი ფორმები</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/blenderi">ბლენდერი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/puris sacxobi">პურის საცხობი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/choperi">ჩოპერი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/Coffee Capsules">ყავის კაფსულები</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/yavis-saprqvavi">ყავის საფქვავი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/yavis-aparati">ყავის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/fris-aparati">ფრის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/chiris-aparati">დეჰიდრატორი/ჩირის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/Samzareulos Kombaini">სამზარეულოს კომბაინი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/grili">გრილი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/hand-blender">ხელის ბლენდერი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/Kinulis-Aparati">ყინულის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/damaqucmacebeli">დამაქუცმაცებელი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/sulu-spiede">წვენსაწური</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/chaidani">ჩაიდანი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/samzareulos-aqsesuarebi">სამზარეულოს აქსესუარები</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/xorcis-manqana">ხორცის მანქანა</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/mikrotalguri">მიკროტალღური</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/MILK FROTH">რძის ამომყვანი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/Mini-Gumeli">მინი ღუმელი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/miqseri">მიქსერი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/multicooker">მულტი სახარში</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/multiroboti">მულტირობოტი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/sendvichis-aparati">სენდვიჩის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/saswori">სასწორი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/slaiseri">სლაისერი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/ortqlsaxarshi">ორთქლსახარში</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/tea-maker">ჩაის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/tosteri">ტოსტერი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/vakuumis-aparati">ვაკუუმის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/vaflis-aparati">ვაფლის აპარატი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/wylis piltri">წყლის ფილტრი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/ghvinis gasakhsneli">ღვინის გასახსნელი</a></li><li><div class="second-category">თავის მოვლის საშუალებები</div></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/tansacmlis-sawmendi">ტანსაცმლის საწმენდი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/Kbilis-Jagrisi">ელექტრო კბილის ჯაგრისი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/epilatori">ეპილატორი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/tmis-dasaxvevi">თმის დასახვევი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/tmis-feni">თმის ფენი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/tmis-gasasworebeli">თმის გასასწორებელი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/tmis-sataileri">თმის სტაილერი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/wversaparsi">წვერსაპარსი</a></li><li><a class="dropdown-item" href="/wvrili-sayofacxovrebo-teqnika/tmis-sakrechi">თმის საკრეჭი/ტრიმერი</a></li></ul></li><li class="nav-item "><a class="nav-link main-menu" href="/televizorebi-da-saxlis-kinoteatri">ტელევიზორი და გასართობი საშუალებები</a><a class="nav-link pull-right icon-menu" id="dropdownMenu4" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://assets.ee.ge/web-assets/images/select-arrow1.png"></a><ul class="dropdown-menu "><li><div class="second-category">კონსოლები</div></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/Nintendo">ნინტენდო</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/პს4">ფლეისთეიშენ 4</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/PS4 Accessories">PS4 აქსესუარები</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/ps4 game">PS4 თამაშები</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/PS5 Accessories">PS5 აქსესუარები</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/PS5 Games">PS5 თამაშები</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/plaisteisheni">ფლეისთეიშენ 5</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/xboxi">იქსბოქსი</a></li><li><div class="second-category">გასართობი საშუალებები</div></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/Binoculars">ბინოკლი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/Fotoaparatis-aksesuarebi">ფოტოაპარატის აქსესუარები</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/kamera">ფოტოაპარატი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/droni">დრონი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/saganmamatleblo-roboti">საგანმანათლებლო რობოტი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/eleqtro skuteri">ელექტრო სკუტერი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/hoverbordi">ჰოვერბორდი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/teleskopi">ტელესკოპი</a></li><li><div class="second-category">ტელევიზორი/სახლის კინოთეატრი</div></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/კაბელი">კაბელი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/saxlis-kinoteatri">სახლის კინოთეატრი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/tv box">TV ბოქსი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/Televizoris-Charcho">ტელევიზორის ჩარჩო</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/televizoris sakidi">ტელევიზორის საკიდი</a></li><li><a class="dropdown-item" href="/televizorebi-da-saxlis-kinoteatri/televizori">ტელევიზორი</a></li></ul></li><li class="nav-item "><a class="nav-link main-menu" href="/furniture">ავეჯი</a><a class="nav-link pull-right icon-menu" id="dropdownMenu5" data-target="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="https://assets.ee.ge/web-assets/images/select-arrow1.png"></a><ul class="dropdown-menu "><li><div class="second-category">მისაღები ოთახი</div></li><li><a class="dropdown-item" href="/furniture/კონსოლი">კონსოლი</a></li><li><a class="dropdown-item" href="/furniture/დივანი">დივანი</a></li><li><a class="dropdown-item" href="/furniture/სავარძელი">სავარძელი</a></li><li><div class="second-category">სასადილო ოთახი</div></li><li><a class="dropdown-item" href="/furniture/დესაუ">დესაუ</a></li><li><a class="dropdown-item" href="/furniture/მაგიდა">მაგიდა</a></li><li><a class="dropdown-item" href="/furniture/სკამი">სკამი</a></li><li><a class="dropdown-item" href="/furniture/ჭურჭლის კარადა">ჭურჭლის კარადა</a></li><li><div class="second-category">საძინებელი</div></li><li><a class="dropdown-item" href="/furniture/კომოდი">კომოდი</a></li><li><a class="dropdown-item" href="/furniture/ტუმბო">ტუმბო</a></li><li><a class="dropdown-item" href="/furniture/პუფი">პუფი</a></li><li><a class="dropdown-item" href="/furniture/მაღალი კომოდი">მაღალი კომოდი</a></li><li><a class="dropdown-item" href="/furniture/საწოლი">საწოლი</a></li><li><a class="dropdown-item" href="/furniture/ბენჩი">ბენჩი</a></li><li><a class="dropdown-item" href="/furniture/ტანსაცმლის კარადა">ტანსაცმლის კარადა</a></li><li><div class="second-category">გარე ავეჯი</div></li><li><div class="second-category">დეკორი</div></li><li><a class="dropdown-item" href="/furniture/შირმა">შირმა</a></li></ul></li><li class="nav-item list-item-group"><a class="nav-link" href="/sale-product-list"><span>ფასდაკლება</span></a></li><li class="nav-item list-item-group brandMobile"><a class="nav-link" href="/brands"><span>ბრენდი</span></a></li><li class="nav-item"><a class="nav-link" href="/saved-product-list">შენახული ნივთები<i class="fa fa-heart-o" style="color:#FFF;margin-left:5px"></i></a></li><li class="nav-item"><a class="nav-link" href="/registration">რეგისტრაცია</a></li><li class="nav-item"><a class="nav-link" href="/signin">ავტორიზაცია</a></li></ul></div></div></div><div class="register-wrapper"><div class="login"><div class="wrapper" id="register_copyHtml1"><div class=""><div class="logincontainer mt-5"><div class="row"><div class="col-xl-8 col-lg-8 col-md-8 col-xs-12 offset-xl-2 offset-lg-2 offset-md-2 mr-auto"><div class="loginsection-two"><p>შეიძინეთ პროდუქტი ონლაინ. დარეგისტრირდით და იხილეთ ფასდაკლებები. დარეგისტრიდი ახლავე, ეს ერთ წუთზე ნაკლებს წაიღებს<!-- -->.</p><h4 class="registration-titles mt-5">სწრაფი რეგისტრაცია</h4><p>რეგისტრაცია მარტივი, სწრაფი და უფასოა..</p><form autocomplete="off" class="ng-untouched ng-pristine ng-invalid"><div class="form-row"><div class="form-group col-lg-6 col-md-6 col-xs-12"><input type="text" class="form-control  " name="firstName" id="firstName" placeholder="სახელი" value=""></div><div class="form-group col-lg-6 col-md-6 col-xs-12"><input type="text" class="form-control " name="lastName" id="lastName" placeholder="გვარი" value=""></div></div><div class="form-row"><div class="form-group col-lg-8 col-md-8 col-xs-12"><input type="text" class="form-control " name="email" id="email" placeholder="მიუთითეთ ელ. ფოსტა და მიიღეთ სიახლეები" value=""></div></div><div class="form-row"><div class="form-group col-lg-6 col-md-6 col-xs-12"><div class="password1"><input type="password" autocomplete="new-password" class="form-control  " name="password" id="password" placeholder="პაროლი" value=""></div></div><div class="form-group col-lg-6 col-md-6 col-xs-12"><div class="password1"><input type="password" class="form-control  " name="confirmPassword" id="confirmPassword" value="" placeholder="გაიმეორეთ პაროლი"></div></div></div><div class="signup-note"><span>თქვენ გამოგეგზავნებათ ვერიფიკაციის შეტყობინება მეილზე, გთხოვთ მიუთითოთ გამოგზავნილი კოდი მომდევნო გვერდზე.</span></div><button type="button" class="btn-darkred btn-disabled" id="singup" disabled="">რეგისტრაცია</button></form><div class="dont-have-account col-xs-12"><span class="txt-grey font-weight-bold">რეგისტრაცია<!-- --> </span></div><div class="social-login col-xs-12"><span style="transition: opacity 0.5s ease 0s;"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"><button type="button" class="facebook btn metro"><i class="fa fa fa-facebook"></i> Facebook</button></span><button class="google btn"><i class="fa fa-google-plus"></i> Google</button></div></div></div></div></div></div></div></div></div><footer style="display:block" class="footer-menu-wrapper"><div class="footer-menu"><div class="container"><div class="row align-items-center"><div class="col-lg-2 col-sm-6 col-5 text-center"><div class="logo"><a href="/"><img src="https://assets.ee.ge/web-assets/images/bottomlogo.png" alt="no image"></a></div></div><div class="col-lg-7 order-lg-2 order-3 col-12"><div class="subscribe"><div class="input-group"><input type="email" value="" placeholder="მიუთითეთ ელ. ფოსტა და მიიღეთ სიახლეები" class="form-control"><div class="input-group-append"><button class="btn btn-secondary subscribe-btn">გამოწერა</button></div></div></div></div><div class="col-lg-3 col-sm-6 order-lg-3 order-2 col-7 numcol"><div class="contact ml-2"><div class="input-group" style="width:180px;margin:0 auto"><div class="input-group-prepend"><span class=""><i class="fa fa-phone"></i></span></div><p id="number"><a class="a-links" style="text-decoration:none" href="tel:0322484848">032 2 48 48 48</a></p></div></div></div></div></div></div><div class="main-footer d-flex  p-4 d-xs-none faking"><div class="delete-1"><div class="h5_css">კომპანიის შესახებ</div><ul class="nav flex-column"><li><a href="/page/about">ჩვენს შესახებ<!-- --> </a></li><li><a href="/page/warranty">საგარანტიო პირობები<!-- --> </a></li><li><a href="/jobs">ვაკანსია<!-- --> </a></li><li><a href="/page/shipping-terms">მიწოდების პირობები<!-- --> </a></li><li><a href="/page/terms">საიტის მოხმარების პირობები<!-- --> </a></li><li><a href="/page/Installation-Terms">მონტაჟის პირობები<!-- --> </a></li><li><a href="/page/Privacy-Policy">პერსონალური მონაცემების პოლიტიკა<!-- --> </a></li><li><a href="/page/Cookie-Policy">"ქუქი" პოლიტიკა<!-- --> </a></li><li><a href="/page/Statement">განცხადება<!-- --> </a></li><li><a href="/page/Warranty-Terms-Furniture">საგარანტიო პირობები-ავეჯი<!-- --> </a></li><li><a href="/page/Trade-in">Trade-in <!-- --> </a></li><li><a href="/page/Quick-Delivery">სწრაფი მიტანა<!-- --> </a></li><li><a href="/page/Store-Pickup">მაღაზიიდან გატანა<!-- --> </a></li></ul></div><div class="delete-1"><div class="h5_css">კონტაქტი</div><ul class="nav flex-column"><li><a href="/page/contact">დაგვიკავშირდით <!-- --> </a></li><li><a href="/page/shop-location">მაღაზიები<!-- --> </a></li><li><a href="/supportpage">მხარდაჭერა<!-- --> </a></li><li><a href="/page/Elit-Service">ელიტ სერვისი<!-- --> </a></li><li><a href="/page/Purchase-manual-for-PC-users">ნივთის შეძენის ინსტრუქცია კომპიუტერით შევსებისას<!-- --> </a></li><li><a href="/page/Purchase-manual-for-Mobile">ნივთის შეძენის ინსტრუქცია მობილურით შევსებისას<!-- --> </a></li><li><a href="/page/Nobilia">ნობილია<!-- --> </a></li><li><a href="/page/FAQ">ხშირად დასმული კითხვები<!-- --> </a></li></ul></div><div class="delete-1"><div class="h5_css">კორპორატიული</div><ul class="nav flex-column"><li><a href="/page/b2b">კომპანიებისთვის<!-- --> </a></li><li><a href="/page/gift">სასაჩუქრე ბარათები<!-- --> </a></li></ul></div></div><div class="col-xs-12 footer-section-wrapper d-lg-none d-md-none d-sm-none"><div class="footer-section-item"><div class="h5_css">კომპანიის შესახებ</div><div class="collapse navbar-toggleable-md show" id="{{section.section_title | string_replace}}"><ul class="nav navbar-nav pull-lg-left pull-left"><li class="fullWidth"><a href="/page/about">ჩვენს შესახებ<!-- --> </a></li><li class="fullWidth"><a href="/page/warranty">საგარანტიო პირობები<!-- --> </a></li><li class="fullWidth"><a href="/jobs">ვაკანსია<!-- --> </a></li><li class="fullWidth"><a href="/page/shipping-terms">მიწოდების პირობები<!-- --> </a></li><li class="fullWidth"><a href="/page/terms">საიტის მოხმარების პირობები<!-- --> </a></li><li class="fullWidth"><a href="/page/Installation-Terms">მონტაჟის პირობები<!-- --> </a></li><li class="fullWidth"><a href="/page/Privacy-Policy">პერსონალური მონაცემების პოლიტიკა<!-- --> </a></li><li class="fullWidth"><a href="/page/Cookie-Policy">"ქუქი" პოლიტიკა<!-- --> </a></li><li class="fullWidth"><a href="/page/Statement">განცხადება<!-- --> </a></li><li class="fullWidth"><a href="/page/Warranty-Terms-Furniture">საგარანტიო პირობები-ავეჯი<!-- --> </a></li><li class="fullWidth"><a href="/page/Trade-in">Trade-in <!-- --> </a></li><li class="fullWidth"><a href="/page/Quick-Delivery">სწრაფი მიტანა<!-- --> </a></li><li class="fullWidth"><a href="/page/Store-Pickup">მაღაზიიდან გატანა<!-- --> </a></li></ul></div></div><div class="footer-section-item"><div class="h5_css">კონტაქტი</div><div class="collapse navbar-toggleable-md show" id="{{section.section_title | string_replace}}"><ul class="nav navbar-nav pull-lg-left pull-left"><li class="fullWidth"><a href="/page/contact">დაგვიკავშირდით <!-- --> </a></li><li class="fullWidth"><a href="/page/shop-location">მაღაზიები<!-- --> </a></li><li class="fullWidth"><a href="/supportpage">მხარდაჭერა<!-- --> </a></li><li class="fullWidth"><a href="/page/Elit-Service">ელიტ სერვისი<!-- --> </a></li><li class="fullWidth"><a href="/page/Purchase-manual-for-PC-users">ნივთის შეძენის ინსტრუქცია კომპიუტერით შევსებისას<!-- --> </a></li><li class="fullWidth"><a href="/page/Purchase-manual-for-Mobile">ნივთის შეძენის ინსტრუქცია მობილურით შევსებისას<!-- --> </a></li><li class="fullWidth"><a href="/page/Nobilia">ნობილია<!-- --> </a></li><li class="fullWidth"><a href="/page/FAQ">ხშირად დასმული კითხვები<!-- --> </a></li></ul></div></div><div class="footer-section-item"><div class="h5_css">კორპორატიული</div><div class="collapse navbar-toggleable-md show" id="{{section.section_title | string_replace}}"><ul class="nav navbar-nav pull-lg-left pull-left"><li class="fullWidth"><a href="/page/b2b">კომპანიებისთვის<!-- --> </a></li><li class="fullWidth"><a href="/page/gift">სასაჩუქრე ბარათები<!-- --> </a></li></ul></div></div></div><div class="compare-product-view-wrapper"><div class="compare-side no-print d-xs-none"><div class="compare-side-blur blur"></div></div></div></footer><footer class="footer-section"><div class="social-icons d-lg-none d-md-none d-sm-none"><a href="https://www.facebook.com/ElitElectronics" target="_blank"><i class="fa fa-facebook-square"></i></a><a href="https://www.youtube.com/c/EeGeElitElectronics" target="_blank"><i class="fa fa-youtube-square"></i></a><a href="https://www.instagram.com/elit_electronics/" target="_blank"><img class="intaSvg" src="https://testassets.ee.ge/web-assets/images/instagram.svg"></a></div><div class="copyright"><p class="bizumaFooter">Copyright © 2022 Elit Electronics. All Rights Reserved. 
+</p></div><div class="social-icons d-xs-none"><a href="https://www.facebook.com/ElitElectronics" target="_blank"><i class="fa fa-facebook-square"></i></a><a href="https://www.youtube.com/c/EeGeElitElectronics" target="_blank"><i class="fa fa-youtube-square"></i></a><a href="https://www.instagram.com/elit_electronics/" target="_blank"><img class="intaSvg" src="https://testassets.ee.ge/web-assets/images/instagram.svg"></a></div><div class="CookieConsent" style="align-items: baseline; background: rgb(53, 53, 53); color: white; display: flex; flex-wrap: wrap; justify-content: space-between; left: 0px; position: fixed; width: 100%; z-index: 999; bottom: 0px;"><div class="" style="flex: 1 0 300px; margin: 15px;"><div class="d-xs-none">მომხმარებლის საუკეთესო გამოცდილებისთვის, ჩვენ ვიყენებთ ქუქი ფაილებს კონტენტისა და რეკლამების პერსონალიზაციისთვის, სოციალური მედიის ფუნქციების უზრუნველსაყოფად და მომხმარებლის ქცევის გასაანალიზებლად ისეთი ინსტრუმენტების გამოყენებით, როგორიცაა Google Analytics და Facebook. თქვენ შეგიძლიათ ნახოთ ჩვენი ქუქი პოლიტიკა შემდეგ ბმულზე: <b>&nbsp;<a class="CookieConsentLinks" href="/page/Cookie-Policy">ქუქი პოლიტიკა.</a>&nbsp;</b>ამ ვებსაიტის და მისი სერვისების გამოყენებით თქვენ ეთანხმებით ჩვენს<b>&nbsp;<a class="CookieConsentLinks" href="/page/terms">საიტის მოხმარების პირობები.</a></b></div><div class="d-lg-none d-md-none d-sm-none">მომხმარებლის საუკეთესო გამოცდილებისთვის, ჩვენ ვიყენებთ ქუქი ფაილებს კო<span class="read-or-hide"> ...მეტის ნახვა</span></div></div><div class=""><button class="" id="rcc-confirm-button" aria-label="Accept cookies" style="background: rgb(255, 212, 45); border: 0px; border-radius: 0px; box-shadow: none; color: black; cursor: pointer; flex: 0 0 auto; padding: 5px 10px; margin: 15px;">დახურვა</button></div></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"initialState":{"common":{"pending":true,"appStart":false,"profile":null,"footer":{"status":"success","code":"200","msg":"Data found","data":[{"id":"1","section_title":"About Elit","section_title_gr":"კომპანიის შესახებ","pages":[[{"id":"19","slug":"about","page_title":"About Us","page_title_gr":"ჩვენს შესახებ","link_title":"About Us","link_title_gr":"ჩვენს შესახებ","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"20","slug":"warranty","page_title":"Warranty terms","page_title_gr":"საგარანტიო პირობები","link_title":"Warranty terms","link_title_gr":"საგარანტიო პირობები","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"17","slug":"","page_title":"Career Page","page_title_gr":"ვაკანსია","link_title":null,"link_title_gr":null,"is_contact_page":"0","is_support_page":"0","is_career_page":"1"},{"id":"22","slug":"shipping-terms","page_title":"Shipping Terms","page_title_gr":"მიწოდების პირობები","link_title":"Shipping Terms","link_title_gr":"მიწოდების პირობები","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"21","slug":"terms","page_title":"Terms and Conditions","page_title_gr":"საიტის მოხმარების პირობები","link_title":"Terms and Conditions","link_title_gr":"საიტის მოხმარების პირობები","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"31","slug":"Installation-Terms","page_title":"Installation Terms","page_title_gr":"მონტაჟის პირობები","link_title":"Installation Terms","link_title_gr":"მონტაჟის პირობები","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"33","slug":"Privacy-Policy","page_title":"Privacy Policy","page_title_gr":"პერსონალური მონაცემების პოლიტიკა","link_title":"Privacy Policy","link_title_gr":"პერსონალური მონაცემების პოლიტიკა","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"37","slug":"Cookie-Policy","page_title":"Cookie Policy","page_title_gr":"\"ქუქი\" პოლიტიკა","link_title":"Cookie Policy","link_title_gr":"\"ქუქი\" პოლიტიკა","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"41","slug":"Statement","page_title":"Statement ","page_title_gr":"განცხადება","link_title":"Statement ","link_title_gr":"განცხადება","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"45","slug":"Warranty-Terms-Furniture","page_title":"Warranty Terms-Furniture","page_title_gr":"საგარანტიო პირობები-ავეჯი","link_title":"Warranty Terms-Furniture","link_title_gr":"საგარანტიო პირობები-ავეჯი","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"46","slug":"Trade-in","page_title":"Trade-in","page_title_gr":"Trade-in","link_title":"Trade-in ","link_title_gr":"Trade-in ","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"48","slug":"Quick-Delivery","page_title":"Quick Delivery","page_title_gr":"სწრაფი მიტანა","link_title":"Quick Delivery","link_title_gr":"სწრაფი მიტანა","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"49","slug":"Store-Pickup","page_title":"Store Pickup","page_title_gr":"მაღაზიიდან გატანა","link_title":"Store Pickup","link_title_gr":"მაღაზიიდან გატანა","is_contact_page":"0","is_support_page":"0","is_career_page":"0"}]]},{"id":"3","section_title":"Contact Elit","section_title_gr":"კონტაქტი","pages":[[{"id":"23","slug":"contact","page_title":"Contact Us","page_title_gr":"დაგვიკავშირდით ","link_title":"Contact Us","link_title_gr":"დაგვიკავშირდით ","is_contact_page":"1","is_support_page":"0","is_career_page":"0"},{"id":"24","slug":"shop-location","page_title":"Shop Location","page_title_gr":"მაღაზიები","link_title":"Shop Location","link_title_gr":"მაღაზიები","is_contact_page":"1","is_support_page":"0","is_career_page":"0"},{"id":"18","slug":"customer-support","page_title":"Customer Support ","page_title_gr":"მხარდაჭერა ","link_title":"Customer Support ","link_title_gr":"მხარდაჭერა ","is_contact_page":"0","is_support_page":"1","is_career_page":"0"},{"id":"34","slug":"Elit-Service","page_title":"Elit Service","page_title_gr":"ელიტ სერვისი","link_title":"Elit Service","link_title_gr":"ელიტ სერვისი","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"35","slug":"Purchase-manual-for-PC-users","page_title":"Purchase manual for PC users","page_title_gr":"ნივთის შეძენის ინსტრუქცია კომპიუტერით შევსებისას","link_title":"Purchase manual for PC users","link_title_gr":"ნივთის შეძენის ინსტრუქცია კომპიუტერით შევსებისას","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"36","slug":"Purchase-manual-for-Mobile","page_title":"Purchase manual for Mobile","page_title_gr":"ნივთის შეძენის ინსტრუქცია მობილურით შევსებისას","link_title":"Purchase manual for Mobile","link_title_gr":"ნივთის შეძენის ინსტრუქცია მობილურით შევსებისას","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"38","slug":"Nobilia","page_title":"Nobilia","page_title_gr":"ნობილია","link_title":"Nobilia","link_title_gr":"ნობილია","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"40","slug":"FAQ","page_title":"FAQ","page_title_gr":"ხშირად დასმული კითხვები","link_title":"FAQ","link_title_gr":"ხშირად დასმული კითხვები","is_contact_page":"0","is_support_page":"0","is_career_page":"0"}]]},{"id":"15","section_title":"Corporate","section_title_gr":"კორპორატიული","pages":[[{"id":"25","slug":"b2b","page_title":"B2B","page_title_gr":"კომპანიებისთვის","link_title":"B2B","link_title_gr":"კომპანიებისთვის","is_contact_page":"0","is_support_page":"0","is_career_page":"0"},{"id":"26","slug":"gift","page_title":"Gift Card","page_title_gr":"სასაჩუქრე ბარათები","link_title":"Gift Card","link_title_gr":"სასაჩუქრე ბარათები","is_contact_page":"0","is_support_page":"0","is_career_page":"0"}]]}]},"topCategories":{"status":"success","msg":"Data Found","code":200,"count":198,"data":[{"category_id":"5535","category_name":"IT","category_name_gr":"კომპიუტერული ტექნიკა","menu_link":"https://elitelectronics.wvstaging.com/ge/msxvili-sayofacxovrebo-teqnika/chasashenebeli-elqtro-gumeli","menu_image":"","menu_image_gr":"","category_slug":"it","category_slug_gr":"kompiuteruli-teqnika","second_category":[{"category_name":"Computer/Notebook","category_id":"EE230920160942","sub_category":"1","category_name_gr":"კომპიუტერი/ნოუთბუქი","category_slug":"Computer/Notebook","parent_category_slug":"it","category_slug_gr":"kompiuteri/noutbuqi","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Desktop Computer","category_id":"PC","sub_category":"0","category_name_gr":"პერსონალური კომპიუტერი","category_slug":"Desktop-Computer","parent_category_slug":"it","category_slug_gr":"Personaluri Kompiuteri","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Monitor","category_id":"Monitor","sub_category":"0","category_name_gr":"მონიტორი","category_slug":"monitor","parent_category_slug":"it","category_slug_gr":"monitori","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Panel PC","category_id":"Panel-PC","sub_category":"0","category_name_gr":"პანელური კომპიუტერი","category_slug":"panel-pc","parent_category_slug":"it","category_slug_gr":"paneluri-kompiuteri","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Notebook","category_id":"NOTE-PC","sub_category":"0","category_name_gr":"ნოუთბუქი","category_slug":"note-pc","parent_category_slug":"it","category_slug_gr":"leptopi","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Tablet","category_id":"TABLET","sub_category":"0","category_name_gr":"პლანშეტი","category_slug":"tablet","parent_category_slug":"it","category_slug_gr":"plansheti","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"IT Accessories","category_id":"EE240920170710","sub_category":"1","category_name_gr":"კომპიუტერული ტექნიკის აქსესუარები","category_slug":"IT-Accessories","parent_category_slug":"it","category_slug_gr":"kompiuteruli teqnikis aqsesuarebi","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Bags","category_id":"EE170920111629","sub_category":"0","category_name_gr":"ჩანთა","category_slug":"Bags","parent_category_slug":"it","category_slug_gr":"leptopis chanta","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Cleaning Solution","category_id":"EE211220131212","sub_category":"0","category_name_gr":"საწმენდი სითხე","category_slug":"Cleaning-Solution","parent_category_slug":"it","category_slug_gr":"sawmendi sitxe","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Computer Joystick","category_id":"EE040121113041","sub_category":"0","category_name_gr":"კომპიუტერის ჯოისტიკი","category_slug":"Computer-Joystick","parent_category_slug":"it","category_slug_gr":"kompiuteris joistiki","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Cooling Stand","category_id":"EE270521170509","sub_category":"0","category_name_gr":"ლეპტოპის ქულერი","category_slug":"Cooling-Stand","parent_category_slug":"it","category_slug_gr":"Leptopis-Kuleri","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"External HDD-SSD","category_id":"EE060922183021","sub_category":"0","category_name_gr":"გარე მყარი დისკი","category_slug":"External-HDD-SSD","parent_category_slug":"it","category_slug_gr":"External Hard Drives","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Keyboard","category_id":"EE170920111116","sub_category":"0","category_name_gr":"კომპიუტერის კლავიატურა","category_slug":"Keyboard","parent_category_slug":"it","category_slug_gr":"kompiuteris-klaviatura","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Keyboard \u0026 Mouse","category_id":"EE170920130009","sub_category":"0","category_name_gr":"კლავიატურა \u0026 მაუსი","category_slug":"Keyboard-Mouse","parent_category_slug":"it","category_slug_gr":"kompiuteris-klaviatura-mausi","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Laptop Charger","category_id":"EE200922153129","sub_category":"0","category_name_gr":"ნოუთბუქის დამტენი","category_slug":"Laptop-Charger","parent_category_slug":"it","category_slug_gr":"Laptop Charger","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Microphone","category_id":"EE190421104630","sub_category":"0","category_name_gr":"მიკროფონი","category_slug":"Microphone","parent_category_slug":"it","category_slug_gr":"mikrofoni","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Mouse","category_id":"EE170920104902","sub_category":"0","category_name_gr":"მაუსი","category_slug":"Mouse","parent_category_slug":"it","category_slug_gr":"Mouse","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Mouse Pad","category_id":"EE210421110706","sub_category":"0","category_name_gr":"მაუსის დაფა","category_slug":"Mouse-Pad","parent_category_slug":"it","category_slug_gr":"mausis-dafa","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"PC Headphones","category_id":"EE151121103322","sub_category":"0","category_name_gr":"კომპიუტერის ყუსასმენები","category_slug":"PC-Headphones","parent_category_slug":"it","category_slug_gr":"kompiuteris yursasmenebi","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Projector","category_id":"Projector","sub_category":"0","category_name_gr":"პროექტორი","category_slug":"projector","parent_category_slug":"it","category_slug_gr":"proeqtori","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Speakers","category_id":"EE211220122321","sub_category":"0","category_name_gr":"კომპიუტერის სპიკერი","category_slug":"Speakers","parent_category_slug":"it","category_slug_gr":"kompiuteris spikeri","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Tablet Case","category_id":"EE160322182412","sub_category":"0","category_name_gr":"პლანშეტის ქეისი","category_slug":"Tablet-Case","parent_category_slug":"it","category_slug_gr":"Planshetis keisi","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"USB Flash Drives","category_id":"EE170920112155","sub_category":"0","category_name_gr":"ფლეშ მეხსიერების ბარათი","category_slug":"USB-Flash-Drives","parent_category_slug":"it","category_slug_gr":"flesh mexsierebis barati","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Webcam","category_id":"EE210622150210","sub_category":"0","category_name_gr":"ვებკამერა ","category_slug":"Webcam","parent_category_slug":"it","category_slug_gr":"webcam","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Office Equipment","category_id":"EE240920172104","sub_category":"1","category_name_gr":"საოფისე ტექნიკა","category_slug":"Office-Equipment","parent_category_slug":"it","category_slug_gr":"saofise teqnika","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Gaming Chair","category_id":"EE300622105759","sub_category":"0","category_name_gr":"გეიმინგ სავარძელი","category_slug":"Gaming-Chair","parent_category_slug":"it","category_slug_gr":"GamingChair","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Gaming Desk","category_id":"EE270622133158","sub_category":"0","category_name_gr":"გეიმინგ მაგიდა","category_slug":"Gaming-Desk","parent_category_slug":"it","category_slug_gr":"Gaming-Desk","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Lamp ","category_id":"EE290822175220","sub_category":"0","category_name_gr":"სანათი ","category_slug":"Lamp","parent_category_slug":"it","category_slug_gr":"Lamp ","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Printer Cartridge","category_id":"EE211220121432","sub_category":"0","category_name_gr":"პრინტერის კარტრიჯი","category_slug":"Printer-Cartridge","parent_category_slug":"it","category_slug_gr":"printeris kartriji","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Router","category_id":"EE291120172409","sub_category":"0","category_name_gr":"როუტერი","category_slug":"Router","parent_category_slug":"it","category_slug_gr":"routeri","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Security Camera","category_id":"EE180321143227","sub_category":"0","category_name_gr":"უსაფრთხოების კამერა","category_slug":"Security-Camera","parent_category_slug":"it","category_slug_gr":"usafrtxoebbis kamera","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Smart Home Accessories","category_id":"EE300321160053","sub_category":"0","category_name_gr":"ჭკვიანი სახლის აქსესუარები","category_slug":"Smart-Home-Accessories","parent_category_slug":"it","category_slug_gr":"chkviani-saxlis-aksesuarebi","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Surge Protection","category_id":"EE211220121808","sub_category":"0","category_name_gr":"დენის გამანაწილებელი","category_slug":"Surge-Protection","parent_category_slug":"it","category_slug_gr":"denis gamanawilebeli","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Wi-Fi Adapters","category_id":"EE230421114315","sub_category":"0","category_name_gr":"Wi-Fi მიმღები","category_slug":"Wi-Fi-Adapters","parent_category_slug":"it","category_slug_gr":"wi-fi-mimgebi","parent_category_slug_gr":"kompiuteruli-teqnika"},{"category_name":"Printer","category_id":"PRINTER","sub_category":"0","category_name_gr":"პრინტერი","category_slug":"printer","parent_category_slug":"it","category_slug_gr":"printeri","parent_category_slug_gr":"kompiuteruli-teqnika"}]},{"category_id":"5533","category_name":"Large Domestic Appliances","category_name_gr":"მსხვილი საყოფაცხოვრებო ტექნიკა","menu_link":"https://ee.ge","menu_image":"","menu_image_gr":"","category_slug":"large-domestic-appliances","category_slug_gr":"msxvili-sayofacxovrebo-teqnika","second_category":[{"category_name":"Domestic Appliances","category_id":"EE240920165208","sub_category":"1","category_name_gr":"საყოფაცხოვრებო ტექნიკა","category_slug":"Domestic-Appliances","parent_category_slug":"large-domestic-appliances","category_slug_gr":"sayofacxovrebo teqnika","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Dryer","category_id":"DRYER","sub_category":"0","category_name_gr":"საშრობი","category_slug":"dryer","parent_category_slug":"large-domestic-appliances","category_slug_gr":"sashrobi","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Hob","category_id":"HOB","sub_category":"0","category_name_gr":"გაზქურის ზედაპირი","category_slug":"hob","parent_category_slug":"large-domestic-appliances","category_slug_gr":"gazquris-zedapiri","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Hood","category_id":"HOOD","sub_category":"0","category_name_gr":"გამწოვი","category_slug":"hood","parent_category_slug":"large-domestic-appliances","category_slug_gr":"gamtsovi","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Oven","category_id":"OVEN","sub_category":"0","category_name_gr":"გაზქურა","category_slug":"oven","parent_category_slug":"large-domestic-appliances","category_slug_gr":"gazqura","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Steam Cabinet","category_id":"STEAM CAB.","sub_category":"0","category_name_gr":"ორთქლის საშრობი","category_slug":"Steam-Cabinet","parent_category_slug":"large-domestic-appliances","category_slug_gr":"Ortklis Sashrobi","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Washing Machine with Dryer","category_id":"WM DR","sub_category":"0","category_name_gr":"სარეცხის მანქანა საშრობით","category_slug":"washing-machine-with-dryer","parent_category_slug":"large-domestic-appliances","category_slug_gr":"sarecxis-manqnana-sashrobit","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Water Dispenser","category_id":"WATER-DIS","sub_category":"0","category_name_gr":"წყლის დისპენსერი","category_slug":"water-dispenser","parent_category_slug":"large-domestic-appliances","category_slug_gr":"wylis-dispenseri","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Electric Oven","category_id":"EL.OVEN","sub_category":"0","category_name_gr":"ჩასაშენებელი ელექტრო ღუმელი","category_slug":"electric-oven","parent_category_slug":"large-domestic-appliances","category_slug_gr":"chasashenebeli-elqtro-gumeli","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Refrigerator","category_id":"REF","sub_category":"0","category_name_gr":"მაცივარი","category_slug":"refrigerator","parent_category_slug":"large-domestic-appliances","category_slug_gr":"macivari","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Washing Machine","category_id":"WM","sub_category":"0","category_name_gr":"სარეცხი მანქანა","category_slug":"washing-machine","parent_category_slug":"large-domestic-appliances","category_slug_gr":"sarecxi-maqnana","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Dishwasher","category_id":"DISHWASHER","sub_category":"0","category_name_gr":"ჭურჭლის სარეცხი მანქანა","category_slug":"dishwasher","parent_category_slug":"large-domestic-appliances","category_slug_gr":"churchlis-sarecxi-manqana","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Heating \u0026 Cooling","category_id":"EE230920161924","sub_category":"1","category_name_gr":"გათბობა და გაგრილება","category_slug":"Heating-\u0026-Cooling","parent_category_slug":"large-domestic-appliances","category_slug_gr":"Refrigerant calefacit \u0026","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Air Conditioner ","category_id":"AC","sub_category":"0","category_name_gr":"კონდიციონერი","category_slug":"air-conditioner","parent_category_slug":"large-domestic-appliances","category_slug_gr":"kondicioneri","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Central Boiler","category_id":"CEN.BOILER","sub_category":"0","category_name_gr":"ცენტრალური გათბობის ქვაბი","category_slug":"central-boiler","parent_category_slug":"large-domestic-appliances","category_slug_gr":"centraluri-gatbobis-qvabi","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Electric Heater","category_id":"EL-HEATER","sub_category":"0","category_name_gr":"ელექტრო გამათბობელი","category_slug":"electric-heater","parent_category_slug":"large-domestic-appliances","category_slug_gr":"eleqtro-gamatbobeli","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Fan","category_id":"FAN","sub_category":"0","category_name_gr":"ვენტილატორი","category_slug":"fan","parent_category_slug":"large-domestic-appliances","category_slug_gr":"vintilatori","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Gas Heater","category_id":"GAS-HEATER","sub_category":"0","category_name_gr":"გაზის გამათბობელი","category_slug":"gas-heater","parent_category_slug":"large-domestic-appliances","category_slug_gr":"gazis-gamatbobeli","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Heating Equipment","category_id":"HC","sub_category":"0","category_name_gr":"გაზის წყლის გამაცხელებელი","category_slug":"Heating-Equipment","parent_category_slug":"large-domestic-appliances","category_slug_gr":"gamatbobeli-mowyobilobebi","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Oil Radiator","category_id":"OIL-RAD","sub_category":"0","category_name_gr":"ზეთის რადიატორი","category_slug":"oil-radiator","parent_category_slug":"large-domestic-appliances","category_slug_gr":"zetis-radiatori","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Radiator","category_id":"RADIATOR","sub_category":"0","category_name_gr":"რადიატორი","category_slug":"radiator","parent_category_slug":"large-domestic-appliances","category_slug_gr":"radiatori","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"},{"category_name":"Water Heater","category_id":"WATER-H","sub_category":"0","category_name_gr":"წყლის ავზი","category_slug":"water-heater","parent_category_slug":"large-domestic-appliances","category_slug_gr":"wylis-avzi","parent_category_slug_gr":"msxvili-sayofacxovrebo-teqnika"}]},{"category_id":"5537","category_name":"Mobile and Accessories","category_name_gr":"მობილური ტელეფონი და აქსესუარები","menu_link":"https://ee.ge","menu_image":"","menu_image_gr":"","category_slug":"mobile-and-accessories","category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi","second_category":[{"category_name":"Accessories ","category_id":"EE230920162930","sub_category":"1","category_name_gr":"აქსესუარები","category_slug":"Accessories","parent_category_slug":"mobile-and-accessories","category_slug_gr":"ADIUNCTUS","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Audio System","category_id":"EE140420181227","sub_category":"0","category_name_gr":"აუდიო სისტემა","category_slug":"Audio-System","parent_category_slug":"mobile-and-accessories","category_slug_gr":"Audio-Sistemebi","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Batteries","category_id":"EE220920185812","sub_category":"0","category_name_gr":"ელემენტი","category_slug":"Batteries","parent_category_slug":"mobile-and-accessories","category_slug_gr":"elementi","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Cable","category_id":"EE170920153324","sub_category":"0","category_name_gr":"კაბელი","category_slug":"Cable","parent_category_slug":"mobile-and-accessories","category_slug_gr":"kabeli","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Car Accessories","category_id":"EE211220115616","sub_category":"0","category_name_gr":"მანქანის აქსესუარები","category_slug":"Car-Accessories","parent_category_slug":"mobile-and-accessories","category_slug_gr":"manqanis aqsesuarebi","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Earphone Cover Case","category_id":"EE291122110444","sub_category":"0","category_name_gr":"ყურსასმენის ქეისი","category_slug":"Earphone-Cover-Case","parent_category_slug":"mobile-and-accessories","category_slug_gr":"earphone cover case","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Gift Box","category_id":"EE011221103119","sub_category":"0","category_name_gr":"სასაჩუქრე ბოქსი","category_slug":"Gift-Box","parent_category_slug":"mobile-and-accessories","category_slug_gr":"Gift-Box","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"GPS Tracker","category_id":"EE240521110801","sub_category":"0","category_name_gr":"ტრეკერი","category_slug":"GPS-Tracker","parent_category_slug":"mobile-and-accessories","category_slug_gr":"trekeri","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Memory Card","category_id":"EE180920113353","sub_category":"0","category_name_gr":"მეხსიერების ბარათი","category_slug":"Memory-Card","parent_category_slug":"mobile-and-accessories","category_slug_gr":"mexsierebis barati","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Phone Case","category_id":"EE170920151502","sub_category":"0","category_name_gr":"მობილურის ქეისი","category_slug":"Phone-Case","parent_category_slug":"mobile-and-accessories","category_slug_gr":"mobiluris qeisi","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Power Bank","category_id":"EE180920105955","sub_category":"0","category_name_gr":"პორტატული დამტენი","category_slug":"Power-Bank","parent_category_slug":"mobile-and-accessories","category_slug_gr":"portatuli-damteni","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Ring Light","category_id":"EE310322171724","sub_category":"0","category_name_gr":"მანათობელი რგოლი","category_slug":"Ring-Light","parent_category_slug":"mobile-and-accessories","category_slug_gr":"Manatobeli Rgoli","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Screen Protector","category_id":"EE180920112726","sub_category":"0","category_name_gr":"ეკრანის დამცავი","category_slug":"Screen-Protector","parent_category_slug":"mobile-and-accessories","category_slug_gr":"ekranis damcavi","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Selfie Stick","category_id":"EE160621174556","sub_category":"0","category_name_gr":"სელფის ჯოხი","category_slug":"Selfie-Stick","parent_category_slug":"mobile-and-accessories","category_slug_gr":"selfis-Jokhi","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Smart watch","category_id":"Smart-watch","sub_category":"0","category_name_gr":"ჭკვიანი საათი","category_slug":"smart-watch","parent_category_slug":"mobile-and-accessories","category_slug_gr":"chkviani-saat","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Smart Watch Accessories","category_id":"EE011122115031","sub_category":"0","category_name_gr":"ჭკვიანი საათის აქსესუარები","category_slug":"Smart-Watch-Accessories","parent_category_slug":"mobile-and-accessories","category_slug_gr":"ჭკვიანი საათის აქსესუარები","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Stabilizer","category_id":"EE181121173615","sub_category":"0","category_name_gr":"სტაბილიზატორი","category_slug":"Stabilizer","parent_category_slug":"mobile-and-accessories","category_slug_gr":"Stabilizatori","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Sterilizer","category_id":"EE160822155825","sub_category":"0","category_name_gr":"სტერილიზატორი","category_slug":"Sterilizer","parent_category_slug":"mobile-and-accessories","category_slug_gr":"Sterilizer","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Stylus","category_id":"EE030822133119","sub_category":"0","category_name_gr":"სტილუსი","category_slug":"Stylus","parent_category_slug":"mobile-and-accessories","category_slug_gr":"სტილუსი","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Wall Charger","category_id":"EE211220120237","sub_category":"0","category_name_gr":"დამტენი","category_slug":"Wall-Charger","parent_category_slug":"mobile-and-accessories","category_slug_gr":"damteni","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Headphones","category_id":"Earphones","sub_category":"0","category_name_gr":"ყურსასმენები","category_slug":"Headphones","parent_category_slug":"mobile-and-accessories","category_slug_gr":"yursasmenebi","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Mobile","category_id":"EE230920162832","sub_category":"1","category_name_gr":"მობილური ტექნიკა","category_slug":"Mobile","parent_category_slug":"mobile-and-accessories","category_slug_gr":"mobiluri teqnika","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"},{"category_name":"Mobile Phone","category_id":"MOB PHONE","sub_category":"0","category_name_gr":"მობილური ტელეფონები","category_slug":"mobile-phone","parent_category_slug":"mobile-and-accessories","category_slug_gr":"mobiluri-telefoni","parent_category_slug_gr":"mobiluri-telefonebi-da-aqsesuarebi"}]},{"category_id":"5534","category_name":"Small Domestic Appliances","category_name_gr":"წვრილი საყოფაცხოვრებო ტექნიკა","menu_link":"https://ee.ge","menu_image":"","menu_image_gr":"","category_slug":"small-domestic-appliances","category_slug_gr":"wvrili-sayofacxovrebo-teqnika","second_category":[{"category_name":"Family Appliances","category_id":"EE230920163732","sub_category":"1","category_name_gr":"საოჯახო ტექნიკა","category_slug":"Family-Appliances","parent_category_slug":"small-domestic-appliances","category_slug_gr":"saojaxo teqnika","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Air Humidifier","category_id":"Air-humidifier","sub_category":"0","category_name_gr":"ჰაერის დამატენიანებელი","category_slug":"air-humidifier","parent_category_slug":"small-domestic-appliances","category_slug_gr":"haeris-damatenianebeli","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Iron","category_id":"IRON","sub_category":"0","category_name_gr":"უთო","category_slug":"iron","parent_category_slug":"small-domestic-appliances","category_slug_gr":"uto","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Iron Table","category_id":"Iron-table","sub_category":"0","category_name_gr":"საუთოვებელი მაგიდა","category_slug":"iron-table","parent_category_slug":"small-domestic-appliances","category_slug_gr":"sautovebeli-magida","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Popcorn Maker","category_id":"EE161121124406","sub_category":"0","category_name_gr":"პოპკორნის აპარატი","category_slug":"Popcorn-Maker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"Popkornis-Aparati","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Vacuum Cleaner","category_id":"VC","sub_category":"0","category_name_gr":"მტვერსასრუტი","category_slug":"vacuum-cleaner","parent_category_slug":"small-domestic-appliances","category_slug_gr":"mtversasruti","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"vacuum cleaner bags","category_id":"EE021122173354","sub_category":"0","category_name_gr":"მტვერსასრუტის ფილტრები","category_slug":"vacuum-cleaner-bags","parent_category_slug":"small-domestic-appliances","category_slug_gr":"vacuum-cleaner-bags","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Kitchen Equipment","category_id":"EE230920151741","sub_category":"1","category_name_gr":"სამზარეულოს ტექნიკა","category_slug":"Kitchen-Equipment","parent_category_slug":"small-domestic-appliances","category_slug_gr":"culina","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Aerogrill","category_id":"EE220320222328","sub_category":"0","category_name_gr":"აერო გრილი","category_slug":"Aerogrill","parent_category_slug":"small-domestic-appliances","category_slug_gr":"aerogrili","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Baking Forms","category_id":"EE211220114842","sub_category":"0","category_name_gr":"საცხობი ფორმები","category_slug":"Baking-Forms","parent_category_slug":"small-domestic-appliances","category_slug_gr":"sacxobi formebi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Blender","category_id":"Blender","sub_category":"0","category_name_gr":"ბლენდერი","category_slug":"blender","parent_category_slug":"small-domestic-appliances","category_slug_gr":"blenderi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Bread Maker","category_id":"EE241120175647","sub_category":"0","category_name_gr":"პურის საცხობი","category_slug":"Bread-Maker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"puris sacxobi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Chopper","category_id":"Chopper","sub_category":"0","category_name_gr":"ჩოპერი","category_slug":"chopper","parent_category_slug":"small-domestic-appliances","category_slug_gr":"choperi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Coffee Capsules","category_id":"EE290822122702","sub_category":"0","category_name_gr":"ყავის კაფსულები","category_slug":"Coffee-Capsules","parent_category_slug":"small-domestic-appliances","category_slug_gr":"Coffee Capsules","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Coffee Grinder","category_id":"Coffee-Grinder","sub_category":"0","category_name_gr":"ყავის საფქვავი","category_slug":"coffee-grinder","parent_category_slug":"small-domestic-appliances","category_slug_gr":"yavis-saprqvavi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Coffee Machine","category_id":"COFFEE-MACHINE","sub_category":"0","category_name_gr":"ყავის აპარატი","category_slug":"coffee-machine","parent_category_slug":"small-domestic-appliances","category_slug_gr":"yavis-aparati","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Deep Frier","category_id":"EE260221111530","sub_category":"0","category_name_gr":"ფრის აპარატი","category_slug":"Deep-Frier","parent_category_slug":"small-domestic-appliances","category_slug_gr":"fris-aparati","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Dehidrator","category_id":"EE300321131807","sub_category":"0","category_name_gr":"დეჰიდრატორი/ჩირის აპარატი","category_slug":"Dehidrator","parent_category_slug":"small-domestic-appliances","category_slug_gr":"chiris-aparati","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Food Processor","category_id":"EE290921162515","sub_category":"0","category_name_gr":"სამზარეულოს კომბაინი","category_slug":"Food-Processor","parent_category_slug":"small-domestic-appliances","category_slug_gr":"Samzareulos Kombaini","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Grill","category_id":"Grill","sub_category":"0","category_name_gr":"გრილი","category_slug":"grill","parent_category_slug":"small-domestic-appliances","category_slug_gr":"grili","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Hand Blender","category_id":"hand-blender","sub_category":"0","category_name_gr":"ხელის ბლენდერი","category_slug":"hand-blender","parent_category_slug":"small-domestic-appliances","category_slug_gr":"hand-blender","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Ice Maker","category_id":"EE270521153307","sub_category":"0","category_name_gr":"ყინულის აპარატი","category_slug":"Ice-Maker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"Kinulis-Aparati","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Instinker","category_id":"EE170321171620","sub_category":"0","category_name_gr":"დამაქუცმაცებელი","category_slug":"Instinker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"damaqucmacebeli","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Juicer","category_id":"JUICER","sub_category":"0","category_name_gr":"წვენსაწური","category_slug":"juicer","parent_category_slug":"small-domestic-appliances","category_slug_gr":"sulu-spiede","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Kettle","category_id":"KETTLE","sub_category":"0","category_name_gr":"ჩაიდანი","category_slug":"kettle","parent_category_slug":"small-domestic-appliances","category_slug_gr":"chaidani","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Kitchen Accessories","category_id":"Kitchen-accessories","sub_category":"0","category_name_gr":"სამზარეულოს აქსესუარები","category_slug":"kitchen-accessories","parent_category_slug":"small-domestic-appliances","category_slug_gr":"samzareulos-aqsesuarebi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Meat Mincer","category_id":"Meat-Mincer","sub_category":"0","category_name_gr":"ხორცის მანქანა","category_slug":"meat-mincer","parent_category_slug":"small-domestic-appliances","category_slug_gr":"xorcis-manqana","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Microwave","category_id":"Microwave","sub_category":"0","category_name_gr":"მიკროტალღური","category_slug":"microwave","parent_category_slug":"small-domestic-appliances","category_slug_gr":"mikrotalguri","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Milk Froth","category_id":"EE101122154953","sub_category":"0","category_name_gr":"რძის ამომყვანი","category_slug":"Milk-Froth","parent_category_slug":"small-domestic-appliances","category_slug_gr":"MILK FROTH","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Mini Oven","category_id":"EE230921164419","sub_category":"0","category_name_gr":"მინი ღუმელი","category_slug":"Mini-Oven","parent_category_slug":"small-domestic-appliances","category_slug_gr":"Mini-Gumeli","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Mixer","category_id":"Mixer","sub_category":"0","category_name_gr":"მიქსერი","category_slug":"mixer","parent_category_slug":"small-domestic-appliances","category_slug_gr":"miqseri","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Multicooker","category_id":"Multicooker","sub_category":"0","category_name_gr":"მულტი სახარში","category_slug":"multicooker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"multicooker","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Multirobot","category_id":"Multirobot","sub_category":"0","category_name_gr":"მულტირობოტი","category_slug":"multirobot","parent_category_slug":"small-domestic-appliances","category_slug_gr":"multiroboti","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Sandwich Maker","category_id":"Sandwich-m","sub_category":"0","category_name_gr":"სენდვიჩის აპარატი","category_slug":"sandwich-maker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"sendvichis-aparati","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Scale","category_id":"Scale","sub_category":"0","category_name_gr":"სასწორი","category_slug":"scale","parent_category_slug":"small-domestic-appliances","category_slug_gr":"saswori","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Slicer","category_id":"Slicer","sub_category":"0","category_name_gr":"სლაისერი","category_slug":"slicer","parent_category_slug":"small-domestic-appliances","category_slug_gr":"slaiseri","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Steam Cooker","category_id":"EE300321132843","sub_category":"0","category_name_gr":"ორთქლსახარში","category_slug":"Steam-Cooker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"ortqlsaxarshi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Tea Maker","category_id":"EE230421113630","sub_category":"0","category_name_gr":"ჩაის აპარატი","category_slug":"Tea-Maker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tea-maker","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Toaster","category_id":"Toaster","sub_category":"0","category_name_gr":"ტოსტერი","category_slug":"toaster","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tosteri","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Vacuum Sealer","category_id":"EE070421163828","sub_category":"0","category_name_gr":"ვაკუუმის აპარატი","category_slug":"Vacuum-Sealer","parent_category_slug":"small-domestic-appliances","category_slug_gr":"vakuumis-aparati","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Waffle Maker","category_id":"EE110820160328","sub_category":"0","category_name_gr":"ვაფლის აპარატი","category_slug":"Waffle-Maker","parent_category_slug":"small-domestic-appliances","category_slug_gr":"vaflis-aparati","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Water Filters","category_id":"EE111122140737","sub_category":"0","category_name_gr":"წყლის ფილტრი","category_slug":"Water-Filters","parent_category_slug":"small-domestic-appliances","category_slug_gr":"wylis piltri","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Wine Opener","category_id":"EE290921101528","sub_category":"0","category_name_gr":"ღვინის გასახსნელი","category_slug":"Wine-Opener","parent_category_slug":"small-domestic-appliances","category_slug_gr":"ghvinis gasakhsneli","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Personal Care","category_id":"EE240920162506","sub_category":"1","category_name_gr":"თავის მოვლის საშუალებები","category_slug":"Personal-Care","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tavis movlis saSualebebi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Cloth Trimmers","category_id":"EE110521172740","sub_category":"0","category_name_gr":"ტანსაცმლის საწმენდი","category_slug":"Cloth-Trimmers","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tansacmlis-sawmendi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Electric Toothbrush","category_id":"EE210721114624","sub_category":"0","category_name_gr":"ელექტრო კბილის ჯაგრისი","category_slug":"Electric-Toothbrush","parent_category_slug":"small-domestic-appliances","category_slug_gr":"Kbilis-Jagrisi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Epilator","category_id":"EPILATOR","sub_category":"0","category_name_gr":"ეპილატორი","category_slug":"epilator","parent_category_slug":"small-domestic-appliances","category_slug_gr":"epilatori","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Hair Curler","category_id":"CURLER","sub_category":"0","category_name_gr":"თმის დასახვევი","category_slug":"Hair-Curler","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tmis-dasaxvevi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Hair Dryer","category_id":"HAIR-DRYER","sub_category":"0","category_name_gr":"თმის ფენი","category_slug":"hair-dryer","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tmis-feni","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Hair Straightener","category_id":"STRAIGHT","sub_category":"0","category_name_gr":"თმის გასასწორებელი","category_slug":"hair-straightener","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tmis-gasasworebeli","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Hair Styler","category_id":"EE241220151151","sub_category":"0","category_name_gr":"თმის სტაილერი","category_slug":"Hair-Styler","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tmis-sataileri","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Shaver","category_id":"SHAVER","sub_category":"0","category_name_gr":"წვერსაპარსი","category_slug":"shaver","parent_category_slug":"small-domestic-appliances","category_slug_gr":"wversaparsi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"},{"category_name":"Trimmer","category_id":"TRIMMER","sub_category":"0","category_name_gr":"თმის საკრეჭი/ტრიმერი","category_slug":"trimmer","parent_category_slug":"small-domestic-appliances","category_slug_gr":"tmis-sakrechi","parent_category_slug_gr":"wvrili-sayofacxovrebo-teqnika"}]},{"category_id":"5536","category_name":"TV and Entertainment","category_name_gr":"ტელევიზორი და გასართობი საშუალებები","menu_link":"https://elitelectronics.wvstaging.com/en/large-domestic-appliances/electric-heater","menu_image":"","menu_image_gr":"","category_slug":"tv-and-entertainment","category_slug_gr":"televizorebi-da-saxlis-kinoteatri","second_category":[{"category_name":"Consoles","category_id":"EE240920153110","sub_category":"1","category_name_gr":"კონსოლები","category_slug":"Consoles","parent_category_slug":"tv-and-entertainment","category_slug_gr":"konsolebi","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Nintendo","category_id":"EE270422105100","sub_category":"0","category_name_gr":"ნინტენდო","category_slug":"Nintendo","parent_category_slug":"tv-and-entertainment","category_slug_gr":"Nintendo","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"ps4","category_id":"EE151122150309","sub_category":"0","category_name_gr":"ფლეისთეიშენ 4","category_slug":"ps4","parent_category_slug":"tv-and-entertainment","category_slug_gr":"პს4","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"PS4 Accessories","category_id":"EE280722160544","sub_category":"0","category_name_gr":"PS4 აქსესუარები","category_slug":"PS4-Accessories","parent_category_slug":"tv-and-entertainment","category_slug_gr":"PS4 Accessories","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"PS4 Games","category_id":"EE300822122901","sub_category":"0","category_name_gr":"PS4 თამაშები","category_slug":"PS4-Games","parent_category_slug":"tv-and-entertainment","category_slug_gr":"ps4 game","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"PS5 Accessories","category_id":"EE300822123117","sub_category":"0","category_name_gr":"PS5 აქსესუარები","category_slug":"PS5-Accessories","parent_category_slug":"tv-and-entertainment","category_slug_gr":"PS5 Accessories","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"PS5 Games","category_id":"EE300822123431","sub_category":"0","category_name_gr":"PS5 თამაშები","category_slug":"PS5-Games","parent_category_slug":"tv-and-entertainment","category_slug_gr":"PS5 Games","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"PlayStation 5","category_id":"Playstation","sub_category":"0","category_name_gr":"ფლეისთეიშენ 5","category_slug":"PlayStation-5","parent_category_slug":"tv-and-entertainment","category_slug_gr":"plaisteisheni","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Xbox","category_id":"Xbox","sub_category":"0","category_name_gr":"იქსბოქსი","category_slug":"xbox","parent_category_slug":"tv-and-entertainment","category_slug_gr":"xboxi","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Entertainment","category_id":"EE240920170329","sub_category":"1","category_name_gr":"გასართობი საშუალებები","category_slug":"Entertainment","parent_category_slug":"tv-and-entertainment","category_slug_gr":"gasartobi sashualebebi","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Binoculars","category_id":"EE270622185849","sub_category":"0","category_name_gr":"ბინოკლი","category_slug":"Binoculars","parent_category_slug":"tv-and-entertainment","category_slug_gr":"Binoculars","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Camera Accessories","category_id":"EE030222155016","sub_category":"0","category_name_gr":"ფოტოაპარატის აქსესუარები","category_slug":"Camera-Accessories","parent_category_slug":"tv-and-entertainment","category_slug_gr":"Fotoaparatis-aksesuarebi","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Digital Cameras","category_id":"Camera","sub_category":"0","category_name_gr":"ფოტოაპარატი","category_slug":"Digital-Cameras","parent_category_slug":"tv-and-entertainment","category_slug_gr":"kamera","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Drone","category_id":"DRONE","sub_category":"0","category_name_gr":"დრონი","category_slug":"drone","parent_category_slug":"tv-and-entertainment","category_slug_gr":"droni","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Educational Robot","category_id":"EE110621155045","sub_category":"0","category_name_gr":"საგანმანათლებლო რობოტი","category_slug":"Educational-Robot","parent_category_slug":"tv-and-entertainment","category_slug_gr":"saganmamatleblo-roboti","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Electric Scooter","category_id":"EE211220105848","sub_category":"0","category_name_gr":"ელექტრო სკუტერი","category_slug":"Electric-Scooter","parent_category_slug":"tv-and-entertainment","category_slug_gr":"eleqtro skuteri","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Hoverboard","category_id":"EE190421103705","sub_category":"0","category_name_gr":"ჰოვერბორდი","category_slug":"Hoverboard","parent_category_slug":"tv-and-entertainment","category_slug_gr":"hoverbordi","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Telescope","category_id":"Telescope","sub_category":"0","category_name_gr":"ტელესკოპი","category_slug":"telescope","parent_category_slug":"tv-and-entertainment","category_slug_gr":"teleskopi","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"TV/Home Theater","category_id":"EE230920165141","sub_category":"1","category_name_gr":"ტელევიზორი/სახლის კინოთეატრი","category_slug":"TV/Home-Theater","parent_category_slug":"tv-and-entertainment","category_slug_gr":"televizori-tele","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Cables \u0026 Adapters","category_id":"EE110522164038","sub_category":"0","category_name_gr":"კაბელი","category_slug":"Cables-\u0026-Adapters","parent_category_slug":"tv-and-entertainment","category_slug_gr":"კაბელი","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"Home Cinema","category_id":"EE090420131858","sub_category":"0","category_name_gr":"სახლის კინოთეატრი","category_slug":"Home-Cinema","parent_category_slug":"tv-and-entertainment","category_slug_gr":"saxlis-kinoteatri","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"TV Box","category_id":"EE150421184837","sub_category":"0","category_name_gr":"TV ბოქსი","category_slug":"TV-Box","parent_category_slug":"tv-and-entertainment","category_slug_gr":"tv box","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"TV Frames","category_id":"EE180122111632","sub_category":"0","category_name_gr":"ტელევიზორის ჩარჩო","category_slug":"TV-Frames","parent_category_slug":"tv-and-entertainment","category_slug_gr":"Televizoris-Charcho","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"TV Mounts","category_id":"EE170920113343","sub_category":"0","category_name_gr":"ტელევიზორის საკიდი","category_slug":"TV-Mounts","parent_category_slug":"tv-and-entertainment","category_slug_gr":"televizoris sakidi","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"},{"category_name":"TV","category_id":"TV","sub_category":"0","category_name_gr":"ტელევიზორი","category_slug":"tv","parent_category_slug":"tv-and-entertainment","category_slug_gr":"televizori","parent_category_slug_gr":"televizorebi-da-saxlis-kinoteatri"}]},{"category_id":"5539","category_name":"Furniture","category_name_gr":"ავეჯი","menu_link":null,"menu_image":"","menu_image_gr":"","category_slug":"furniture","category_slug_gr":"furniture","second_category":[{"category_name":"Living Room","category_id":"EE230321101440","sub_category":"1","category_name_gr":"მისაღები ოთახი","category_slug":"Living-Room","parent_category_slug":"elit-home","category_slug_gr":"მისაღები ოთახი","parent_category_slug_gr":"elit-home"},{"category_name":"Console","category_id":"EE160322144002","sub_category":"0","category_name_gr":"კონსოლი","category_slug":"Console","parent_category_slug":"elit-home","category_slug_gr":"კონსოლი","parent_category_slug_gr":"elit-home"},{"category_name":"Sofa","category_id":"EE230321101502","sub_category":"0","category_name_gr":"დივანი","category_slug":"Sofa","parent_category_slug":"elit-home","category_slug_gr":"დივანი","parent_category_slug_gr":"elit-home"},{"category_name":"Armchair","category_id":"EE230321101526","sub_category":"0","category_name_gr":"სავარძელი","category_slug":"Armchair","parent_category_slug":"elit-home","category_slug_gr":"სავარძელი","parent_category_slug_gr":"elit-home"},{"category_name":"Dining Room","category_id":"EE230321101222","sub_category":"1","category_name_gr":"სასადილო ოთახი","category_slug":"Dining-Room","parent_category_slug":"elit-home","category_slug_gr":"სასადილო ოთახი","parent_category_slug_gr":"elit-home"},{"category_name":"Sideboard","category_id":"EE160322143641","sub_category":"0","category_name_gr":"დესაუ","category_slug":"Sideboard","parent_category_slug":"elit-home","category_slug_gr":"დესაუ","parent_category_slug_gr":"elit-home"},{"category_name":"Table","category_id":"EE230321101248","sub_category":"0","category_name_gr":"მაგიდა","category_slug":"Table","parent_category_slug":"elit-home","category_slug_gr":"მაგიდა","parent_category_slug_gr":"elit-home"},{"category_name":"Chair","category_id":"EE230321101314","sub_category":"0","category_name_gr":"სკამი","category_slug":"Chair","parent_category_slug":"elit-home","category_slug_gr":"სკამი","parent_category_slug_gr":"elit-home"},{"category_name":"Cabinet","category_id":"EE230321101628","sub_category":"0","category_name_gr":"ჭურჭლის კარადა","category_slug":"Cabinet","parent_category_slug":"elit-home","category_slug_gr":"ჭურჭლის კარადა","parent_category_slug_gr":"elit-home"},{"category_name":"Bedroom","category_id":"EE230321100552","sub_category":"1","category_name_gr":"საძინებელი","category_slug":"Bedroom","parent_category_slug":"elit-home","category_slug_gr":"საძინებელი","parent_category_slug_gr":"elit-home"},{"category_name":"Dresser","category_id":"EE130422161926","sub_category":"0","category_name_gr":"კომოდი","category_slug":"Dresser","parent_category_slug":"elit-home","category_slug_gr":"კომოდი","parent_category_slug_gr":"elit-home"},{"category_name":"Nightstand","category_id":"EE160322142521","sub_category":"0","category_name_gr":"ტუმბო","category_slug":"Nightstand","parent_category_slug":"elit-home","category_slug_gr":"ტუმბო","parent_category_slug_gr":"elit-home"},{"category_name":"Pouf","category_id":"EE160322142303","sub_category":"0","category_name_gr":"პუფი","category_slug":"Pouf","parent_category_slug":"elit-home","category_slug_gr":"პუფი","parent_category_slug_gr":"elit-home"},{"category_name":"Tallboy","category_id":"EE160322142332","sub_category":"0","category_name_gr":"მაღალი კომოდი","category_slug":"Tallboy","parent_category_slug":"elit-home","category_slug_gr":"მაღალი კომოდი","parent_category_slug_gr":"elit-home"},{"category_name":"Bed","category_id":"EE230321100659","sub_category":"0","category_name_gr":"საწოლი","category_slug":"Bed","parent_category_slug":"elit-home","category_slug_gr":"საწოლი","parent_category_slug_gr":"elit-home"},{"category_name":"Bench","category_id":"EE230321101346","sub_category":"0","category_name_gr":"ბენჩი","category_slug":"Bench","parent_category_slug":"elit-home","category_slug_gr":"ბენჩი","parent_category_slug_gr":"elit-home"},{"category_name":"Wardrobe","category_id":"EE230321101057","sub_category":"0","category_name_gr":"ტანსაცმლის კარადა","category_slug":"Wardrobe","parent_category_slug":"elit-home","category_slug_gr":"ტანსაცმლის კარადა","parent_category_slug_gr":"elit-home"},{"category_name":"Outdoor","category_id":"EE160322144233","sub_category":"1","category_name_gr":"გარე ავეჯი","category_slug":"Outdoor","parent_category_slug":"elit-home","category_slug_gr":"გარე ავეჯი","parent_category_slug_gr":"elit-home"},{"category_name":"Decor","category_id":"EE160322142947","sub_category":"1","category_name_gr":"დეკორი","category_slug":"Decor","parent_category_slug":"elit-home","category_slug_gr":"დეკორი","parent_category_slug_gr":"elit-home"},{"category_name":"Divider","category_id":"EE160322143103","sub_category":"0","category_name_gr":"შირმა","category_slug":"Divider","parent_category_slug":"elit-home","category_slug_gr":"შირმა","parent_category_slug_gr":"elit-home"}]}],"static_pages":[],"night_action":0},"footerPages":{},"lang":"ge","device":null,"searchProductInfo":{},"cartCount":0,"acInstallationProduct":{},"compareProductList":[],"checkout":[],"shippingAddress":[],"deliveryCostEstimate":[],"storePickupLocations":[],"addStorePickupData":{},"deliveryTypeData":{},"confirmOrder":[],"addToCardStatus":null,"addToCardStatusFailure":null,"checkGuestAccount":[],"stockCheck":{}},"home":{"topCategories":{},"mostPopluarProducts":{},"categories":{},"homeSlider":{}},"category":{"featureCategories":{},"categories":{},"categoriesError":null},"productList":{"product":{},"isError":false,"bc":{},"shopLocation":{},"filter":{"min_price":0,"max_price":0,"category":"midea22","brand":[],"color":[],"room":[],"sort_by":"","item_per_page":10,"page_no":1,"specification":[]}},"productInfo":{"product":{},"bc":{},"rvProduct":{}},"brand":{"brandList":[{"brandId":"AMAZON","brandName":"AMAZON","isPageCreated":"1"},{"brandId":"APPLE","brandName":"APPLE","isPageCreated":"1"},{"brandId":"BANG-OLUFS","brandName":"BANG\u0026OLUFSEN","isPageCreated":"1"},{"brandId":"BOLZAN","brandName":"BOLZAN","isPageCreated":"1"},{"brandId":"BOSCH","brandName":"BOSCH","isPageCreated":"1"},{"brandId":"CALIA","brandName":"CALIA ITALIA","isPageCreated":"1"},{"brandId":"CANON","brandName":"CANON","isPageCreated":"1"},{"brandId":"DELONGHI","brandName":"DELONGHI","isPageCreated":"1"},{"brandId":"DYSON","brandName":"DYSON","isPageCreated":"1"},{"brandId":"ECOVACS","brandName":"ECOVACS","isPageCreated":"1"},{"brandId":"EE090822104240","brandName":"ASUS","isPageCreated":"1"},{"brandId":"EE160522160046","brandName":"INSTA360","isPageCreated":"1"},{"brandId":"EGOITALIAN","brandName":"EGOITALIANO","isPageCreated":"1"},{"brandId":"GOOGLE","brandName":"GOOGLE","isPageCreated":"1"},{"brandId":"GORENJE","brandName":"GORENJE","isPageCreated":"1"},{"brandId":"GRAETZ","brandName":"GRAETZ","isPageCreated":"1"},{"brandId":"HONOR","brandName":"HONOR","isPageCreated":"1"},{"brandId":"IROBOT","brandName":"IROBOT","isPageCreated":"1"},{"brandId":"KARCHER","brandName":"KARCHER","isPageCreated":"1"},{"brandId":"KRUPS","brandName":"KRUPS","isPageCreated":"1"},{"brandId":"LOGITECH","brandName":"LOGITECH","isPageCreated":"1"},{"brandId":"MARSHALL","brandName":"MARSHALL","isPageCreated":"1"},{"brandId":"MASSIF","brandName":"MASSIF","isPageCreated":"1"},{"brandId":"MOULINEX","brandName":"MOULINEX","isPageCreated":"1"},{"brandId":"MSI","brandName":"MSI","isPageCreated":"1"},{"brandId":"NINJA","brandName":"NINJA","isPageCreated":"1"},{"brandId":"NINTENDO","brandName":"NINTENDO","isPageCreated":"1"},{"brandId":"NOTHING","brandName":"NOTHING","isPageCreated":"1"},{"brandId":"OZZIO","brandName":"OZZIO","isPageCreated":"1"},{"brandId":"PHILIPS","brandName":"PHILIPS","isPageCreated":"1"},{"brandId":"PLAYSTATIO","brandName":"PLAYSTATION","isPageCreated":"1"},{"brandId":"PRESTIGIO","brandName":"PRESTIGIO","isPageCreated":"1"},{"brandId":"RAZER","brandName":"RAZER","isPageCreated":"1"},{"brandId":"REALME","brandName":"REALME","isPageCreated":"1"},{"brandId":"ROWENTA","brandName":"ROWENTA","isPageCreated":"1"},{"brandId":"SAMSUNG","brandName":"SAMSUNG","isPageCreated":"1"},{"brandId":"SHARK","brandName":"SHARK","isPageCreated":"1"},{"brandId":"SONY","brandName":"SONY","isPageCreated":"1"},{"brandId":"TEFAL","brandName":"TEFAL","isPageCreated":"1"},{"brandId":"TOMASELLA","brandName":"TOMASELLA","isPageCreated":"1"},{"brandId":"XIAOMI","brandName":"XIAOMI","isPageCreated":"1"}],"brandPageDetails":[],"bestSellingBrandProducts":[],"latestBrandProducts":[],"featureCategoryProducts":[],"preOrderPageDetails":[],"preOrderProductSpecificationsDetails":[]},"nightShopping":{"nightShoppingData":[]}}},"__N_SSP":true},"page":"/registration","query":{},"buildId":"afWOELnkJ3p9wTHitJW2v","isFallback":false,"gssp":true,"head":[["meta",{"charSet":"utf-8"}],["meta",{"name":"viewport","content":"width=device-width"}]]}</script><script nomodule="" src="/_next/static/chunks/polyfills-cb31b03e59062df3624f.js"></script><script src="/_next/static/chunks/main-4189f4996d312f6e6965.js" async=""></script><script src="/_next/static/chunks/webpack-40ca2c15c1e336f98ae4.js" async=""></script><script src="/_next/static/chunks/framework.8683c114909ee93ee89f.js" async=""></script><script src="/_next/static/chunks/b8f7e6e8.f670b774c84bedcb2ff7.js" async=""></script><script src="/_next/static/chunks/commons.452e0a8a3d964806ddef.js" async=""></script><script src="/_next/static/chunks/b37f2c124f6a1649a3f696d3bb8cf2c743617ebf.5a3a72fdcc44604a4090.js" async=""></script><script src="/_next/static/chunks/9eaa8e276db5416268d63aca7930f40b6ba8a1a8.d7d44a8d58b6d16a7523.js" async=""></script><script src="/_next/static/chunks/styles.31ed321999e45d6c7c32.js" async=""></script><script src="/_next/static/chunks/pages/_app-d3ccfcd40ad47467641d.js" async=""></script><script src="/_next/static/chunks/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8.46e50e24af4b0235b109.js" async=""></script><script src="/_next/static/chunks/7b3a46d9a68fee6e0caadb2ef765abd2a2b69bc8_CSS.ff5578978733a40a67a3.js" async=""></script><script src="/_next/static/chunks/997a8a3190a747276e8b5535ade07f4411c0afef.b061f7889b8020c62163.js" async=""></script><script src="/_next/static/chunks/1233e4f5dc145b124a2985fd378a1ddc0216b08c.6c765a9acc044cdb00a2.js" async=""></script><script src="/_next/static/chunks/pages/registration-52695205bd411c1006ae.js" async=""></script><script src="/_next/static/afWOELnkJ3p9wTHitJW2v/_buildManifest.js" async=""></script><script src="/_next/static/afWOELnkJ3p9wTHitJW2v/_ssgManifest.js" async=""></script><div class="react-toast-notifications__container css-q2061w"></div><div class="react-toast-notifications__container css-q2061w"></div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div><iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" aria-hidden="true" frame-border="0" src="https://accounts.google.com/o/oauth2/iframe#origin=https%3A%2F%2Fee.ge&amp;rpcToken=253238878.6855628&amp;clearCache=1" style="position: absolute; width: 1px; height: 1px; inset: -9999px; display: none;"></iframe></body></html>
